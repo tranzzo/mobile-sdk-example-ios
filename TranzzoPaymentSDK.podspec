@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform      = :ios, "11.0"
   spec.swift_version = '5.0'
   spec.vendored_frameworks = 'Sources/TranzzoPaymentSDK.framework'
-  spec.source        = { :git => 'https://github.ccom/tranzzo/mobile-sdk-example-ios.git', :tag => "#{spec.version}" }
+  spec.source        = { :git => 'https://github.com/tranzzo/mobile-sdk-example-ios.git', :tag => "#{spec.version}" }
   spec.dependency 'PayCardsRecognizer', '1.1.6'
   spec.dependency 'OwlKit'
   spec.dependency 'AnyFormatKit'

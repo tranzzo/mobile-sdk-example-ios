@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TranzzoPaymentsSDK-Example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TranzzoPaymentsSDK-Example
+  pod 'TranzzoPaymentSDK', :git => 'https://github.com/mrvitalya/trz_test.git' 
+  pod 'SwiftJWT'
+
+end

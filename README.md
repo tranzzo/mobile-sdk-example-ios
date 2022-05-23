@@ -33,10 +33,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-If you want to use **ApplePay™** pass `ApplePayConfig` into `PaymentsConfig` (by default `ApplePayConfig` is `nil`) 
-```swift
-    TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "your_currency", applePay: ApplePayConfig(merchantId: "yout_merchat_id", countryCode: "country_code")))
-```
 Supported server **Environment**:  
 
 ```swift
@@ -48,9 +44,18 @@ public enum Environment {
 
 ### <span style="color:red">**Pay attentsion**</span>.  
 >`currency` should be in format <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>  \
->`coutryCode` should be in format <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">ISO 3166-1 alpha-2</a> 
 
 <br>
+
+# Apple Pay Integration 
+1) Setting Up Apple Pay according <a href="https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay">guide</a> 
+2) Pass `ApplePayConfig` into `PaymentsConfig` (by default `ApplePayConfig` is `nil`) 
+```swift
+    TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "your_currency", applePay: ApplePayConfig(merchantId: "yout_merchat_id", countryCode: "country_code")))
+```
+### <span style="color:red">**Pay attentsion**</span>.  
+>`coutryCode` should be in format <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">ISO 3166-1 alpha-2</a> 
+
 
 # Customization 
 

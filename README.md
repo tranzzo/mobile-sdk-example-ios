@@ -43,7 +43,7 @@ public enum Environment {
 ```
 
 ### <span style="color:red">**Pay attentsion**</span>.  
->`currency` should be in format <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>  \
+>`currency` should be in format <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> 
 
 <br>
 
@@ -56,6 +56,7 @@ public enum Environment {
 ### <span style="color:red">**Pay attentsion**</span>.  
 >`coutryCode` should be in format <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">ISO 3166-1 alpha-2</a> 
 
+<br>
 
 # Customization 
 

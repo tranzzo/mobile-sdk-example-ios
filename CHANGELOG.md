@@ -17,3 +17,9 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Fixed card data validations 
+
+## [1.0.3] - 10.08.2023
+
+### Fixed
+
+- Fixed Swift version 

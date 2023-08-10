@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE18EA68280FF00F004558D3"
-               BuildableName = "TranzzoPaymentsSDK-Example.app"
+               BuildableName = "TranzzoPaymentSDK-Example.app"
                BlueprintName = "TranzzoPaymentSDK-Example"
                ReferencedContainer = "container:TranzzoPaymentSDK-Example.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE18EA68280FF00F004558D3"
-            BuildableName = "TranzzoPaymentsSDK-Example.app"
+            BuildableName = "TranzzoPaymentSDK-Example.app"
             BlueprintName = "TranzzoPaymentSDK-Example"
             ReferencedContainer = "container:TranzzoPaymentSDK-Example.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE18EA68280FF00F004558D3"
-            BuildableName = "TranzzoPaymentsSDK-Example.app"
+            BuildableName = "TranzzoPaymentSDK-Example.app"
             BlueprintName = "TranzzoPaymentSDK-Example"
             ReferencedContainer = "container:TranzzoPaymentSDK-Example.xcodeproj">
          </BuildableReference>

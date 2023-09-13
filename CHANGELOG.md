@@ -23,3 +23,12 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Fixed Swift version 
+
+## [1.0.4] - 12.09.2023
+
+### Added 
+
+- Added new screen for choose tokenized cards
+- Added TokenCardModel object to init method AnyAmountPaymentType
+- Added TokenCardModel object to init method FixedAmountPaymentType
+

@@ -11,7 +11,7 @@ TranzzoPaymentSDK is written in Swift 5+. iOS 11.0+ Required
 With Cocoapods
 
 ```ruby
-pod 'TranzzoPaymentSDK', :git => 'https://github.com/tranzzo/mobile-sdk-ios.git', :tag => '1.0.2'
+pod 'TranzzoPaymentSDK', :git => 'https://github.com/tranzzo/mobile-sdk-ios.git', :tag => '1.0.4'
 ```
 
 While using TranzzoPaymentSDK, don’t forget:
@@ -103,37 +103,56 @@ a) Create `PaymentType` object that contains all necessary information about pay
 - In case user should have the fixed amount for payment you need to create the next object:
 ```swift
 let paymentType = FixedAmountPaymentType(orderId: "your_order_id",
-                                         amount: 0.15, // Decimal
-                                         description: "your_order_description")
+                                         amount: 0.15,
+                                         description: "your_order_description",
+                                         tokenCards: [
+                                            TokenCardModel(mask: "card_mask", 
+                                                           token: "card_token",
+                                                           isDefault: true)
+                                        ])
 ```
->`description` is the text will be displayed to user on the payment screen. Please, provide a readable 
-product description. 
+>`description` is the text will be displayed to user on the payment screen. Please, provide a readable product description.
+`tokenCards` - array of already tokenized cards (TokenCardModel), `nil` by default   
 
-The UI example with fixed amount and product description:
+The UI example with fixed amount, product description and empty `tokenCards`:
 
 <img src="images/fixedAmount.png" width="300"/>
 <br>
+
+The UI example with fixed amount, product description and `tokenCards`:
+
+<img src="images/fixedAmount_tokenized_cards.png" width="300"/>
 <br>
 
 - In case user can change the amount of payment by themself you need to create the next object:
 ```swift
 let paymentType = AnyAmountPaymentType(orderId: UUID().uuidString,
                                        description: "Test product",
-                                       proposedAmounts: [9.99, 14.99, 29.99] // Decimal array
+                                       proposedAmounts: [9.99, 14.99, 29.99], // Decimal array
+                                       tokenCards: [
+                                            TokenCardModel(mask: "card_mask", 
+                                                           token: "card_token",
+                                                           isDefault: true)
+                                        ])
+
 ```
->`proposedAmounts` - array of already predefined amount values, `nil` by default \
-`description` - text will be displayed to user on the payment screen. Please, provide a readable 
-product description. 
+>`proposedAmounts` - array of already predefined amount values, `nil` by default
+`description` - text will be displayed to user on the payment screen. Please, provide a readable product description.
+`tokenCards` - array of already tokenized cards (TokenCardModel), `nil` by default   
 
-The UI example with free to change amount, `proposedAmounts` and product description:n:
-
-<img src="images/anyAmount_prefiled.png" width="300"/>
-
-The UI example with free to change amount, description and empty `proposedAmounts`.
+The UI example with free to change amount, description, empty `proposedAmounts`, empty `tokenCards`.
 
 <img src="images/anyAmount.png" width="300"/>
-
 <br>
+
+The UI example with free to change amount, `proposedAmounts`,product description and empty `tokenCards`:
+
+<img src="images/anyAmount_prefiled.png" width="300"/>
+<br>
+
+The UI example with free to change amount, `proposedAmounts`,product description and `tokenCards`:
+
+<img src="images/anyAmount_prefiled_tokenized_card.png" width="300"/>
 
 b) Create `KeyConfig` object:
 ```swift

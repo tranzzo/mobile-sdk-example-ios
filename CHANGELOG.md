@@ -32,3 +32,8 @@ All notable changes to this project will be documented in this file.
 - Added TokenCardModel object to init method AnyAmountPaymentType
 - Added TokenCardModel object to init method FixedAmountPaymentType
 
+## [1.0.5] - 31.10.2023
+
+### Fixed
+- Fixed access level for PaymentInfoResponse
+- Fixed access level for TranzzoError

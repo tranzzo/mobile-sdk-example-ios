@@ -235,57 +235,39 @@ func paymentSuccess(_ results: PaymentInfoResponse)
 ```
 >Method fire when Payment was successfully. Return `PaymentInfoResponse` object that contains all information about payment
 
-`PaymentInfoResponse` :
-|Parameter    | Description |
-| ----------- | ----------- |
-|payment_id| Unique Tranzzo payment identifier|
-|order_id| Unique identifier of order|
-|gateway_order_id|	Unique order identifier in bank acquirer system.|
-|billing_order_id|	Unique Tranzzo billing identifier|
-|transaction_id| Tranzzo transaction identifier|
-|pos_id	|Merchant's identifier (POS_ID)|
-|mode|	direct|
-|method	|	Payment method (auth or purchase)|
-|amount	|Transaction amount|
-|currency|	Transaction currency (ISO_4217)|
-|description	|Payment description|
-|status |	Transaction status|
-|status_code	|	Tranzzo payment status code|
-|status_description	|	Tranzzo payment status code description|
-|user_action_required	|	Either customer action is required to proceed with payment|
-|user_action_url	|	If user_action_required is true then user should be redirected to this URL|
-|eci	|	Electronic Commerce Indicator - authentication result of credit card payment on 3D Secure|
-|mcc |	MCC for this transaction|
-|options_3ds	|	3-D Secure flow option|
-|cc_mask	|	Card number mask|
-|cc_token	|	Tranzzo card token generated for this card|
-|cc_token_expiration	|	Token expiration timestamp|
-|customer_id	|	Customer identifier in merchant's system|
-|customer_ip	|	Customer IP address|
-|customer_fname	|	Customer first name|
-|customer_lname	|	Customer last name|
-|customer_email	|	Customer email|
-|customer_phone	|	Customer phone|
-|customer_country	|	Customer country|
-|result_url	|	Customer will be redirected to this URL after payment.|
-|created_at	|	Timestamp when transaction was created|
-|processing_time	|	Timestamp when transaction was updated last time|
-|payload	|	Field for custom data|
-|bank_short_name	|	Bank short name.|
-|||
+### PaymentStatus
+```swift
+public enum PaymentStatus: String, Codable {
+    case pending
+    case failure
+    case success
+}
+```
+
+#### SUCCESS
+
+This status indicates that the transaction has been processed successfully.
+
+#### FAILURE
+
+This status indicates that the transaction has been rejected. The reasons for this may include 
+specific errors at any stage of the payment process, such as incorrect payment data, activation 
+of limits and checks, insufficient funds, and so on.
+
+#### PENDING
+
+This status is applicable to all types of transactions and indicates that the transaction is being 
+processed by the bank or payment system. The SDK checks this status on its own and re-requests the 
+status until it receives SUCCESS or FAILURE. But if the status does not change within 60 seconds, 
+the client receives the PENDING status.
+
 
 <br>
 
 ```swift
 func paymentFailed(_ error: TranzzoError)
 ```
->Method fire when Payment was failed. Return `TranzzoError` object that contains short info about 
-
-|Parameter    | Description |
-| ----------- | ----------- |
-|httpCode| Response HTTP status code|
-|message| Readeble message about error|
-|type| Error type (server/client/framework)|
+>Method fire when Payment was failed. Return `TranzzoError` object that contains short info about error
 <br>
 
 ```swift

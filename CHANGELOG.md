@@ -37,3 +37,46 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Fixed access level for PaymentInfoResponse
 - Fixed access level for TranzzoError
+
+## [1.0.6] - 08.11.2023
+
+### Added
+ Added addditional property to PaymentInfoResponse object:
+    customerUserAgent: String?
+    customerCity: String?
+    rrn: String?
+    authCode: String?
+    dcc: String?
+    otpURL: String?
+    makePaymentDescription: String?
+    customerBirthday: String?
+    payway: String?
+    customerPatronym: String?
+    terminalName: String?
+    recipientCcToken: String?
+    recipientCcMask: String?
+    dccRates: String?
+    fee: String?
+    trafficSource: String?
+    gateway: String?
+    paymentSystem: String?
+    entityId: String?
+    externalTerminalName: String?
+    recipientEmail: String?
+    recipientPhone: String?
+    recipientFname: String?
+    recipientLname: String?
+    recipientPatronym: String?
+    merchantOrderId: String?
+    receiptUrl: String?
+    processedAmount: Double?
+    processedCurrency: String?
+    fixedFee: String?
+    percentFee: String?
+    comment: String?
+    terminalFee: String?
+    sendTerminalFee: String?
+    splitFee: String?
+    registryRefNo: String?
+    processedAt: String?
+

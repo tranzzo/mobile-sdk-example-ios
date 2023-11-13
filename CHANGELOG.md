@@ -80,3 +80,8 @@ All notable changes to this project will be documented in this file.
     registryRefNo: String?
     processedAt: String?
 
+## [1.1.7] - 13.11.2023
+
+### Changed
+    Removed fee params from PaymentInfoResponse object
+

@@ -11,7 +11,7 @@ TranzzoPaymentSDK is written in Swift 5+. iOS 11.0+ Required
 With Cocoapods
 
 ```ruby
-pod 'TranzzoPaymentSDK', :git => 'https://github.com/tranzzo/mobile-sdk-ios.git', :tag => '1.0.4'
+pod 'TranzzoPaymentSDK', :git => 'https://github.com/tranzzo/mobile-sdk-ios.git'
 ```
 
 While using TranzzoPaymentSDK, don’t forget:

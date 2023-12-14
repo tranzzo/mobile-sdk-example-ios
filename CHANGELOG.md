@@ -85,3 +85,8 @@ All notable changes to this project will be documented in this file.
 ### Changed
     Removed fee params from PaymentInfoResponse object
 
+## [1.1.9] - 14.12.2023
+
+### Fixed
+    Fixed ApplePay
+

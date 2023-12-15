@@ -90,3 +90,10 @@ All notable changes to this project will be documented in this file.
 ### Fixed
     Fixed ApplePay
 
+## [1.2.9] - 15.12.2023
+
+#### Fixed
+    Fixed ApplePay
+    
+### Changed
+    Changed amout type from Decimal to Double

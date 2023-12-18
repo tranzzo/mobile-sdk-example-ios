@@ -6,9 +6,27 @@
 //
 
 import UIKit
+import SwiftJWT
 import TranzzoPaymentSDK
 
 class ViewController: UIViewController {
+    private struct JWTPayload: Claims {
+        let name: String
+        let iat: Int
+    }
+    
+    var sessionToken: String = {
+        let myIat = Int(NSDate().timeIntervalSince1970)
+        let myPayload = JWTPayload(name: "John Doe", iat: myIat)
+        var myJWT = JWT(claims: myPayload)
+        let key = "UnZhY2tJejgwNEM0ZVFnNzhDU1ZiWGtL"
+        let keyData = key.data(using: .utf8)!
+        let signer = JWTSigner.hs256(key: keyData)
+        return try! myJWT.sign(using: signer)
+    }()
+
+    private let apiKey = "be209028-7248-4b08-8cda-9ea36d38fcfb"
+    private let posId = "8d6ba88a-6e45-42cd-9626-f6a6d182ddae"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +35,7 @@ class ViewController: UIViewController {
     
     @IBAction private func anyAmountButtonTapped(_ sender: AnyObject) {
         let paymentType = AnyAmountPaymentType(orderId: UUID().uuidString, description: "Test product", proposedAmounts: [9.99, 14.99, 29.99])
-        let keyConfig = KeyConfig(sessionToken: JWTGenerator.sessionToken, apiKey: "28e957dc-aff7-4575-bd0f-739ec9bc77ee", posId: "064ec3f8-8abb-414b-9eb3-49d977213967")
+        let keyConfig = KeyConfig(sessionToken: sessionToken, apiKey: apiKey, posId: posId)
         let additionalData = AdditionalData(method: .purchase, serverUrl: nil, products: nil, merchantMcc: nil, payload: nil)
         let customerData = CustomerData(customerEmail: "test@email.com", customerPhone: "123456789")
         
@@ -35,7 +53,7 @@ class ViewController: UIViewController {
         let paymentType = FixedAmountPaymentType(orderId: UUID().uuidString,
                                                  amount: 0.15,
                                                  description: "Test product")
-        let keyConfig = KeyConfig(sessionToken: JWTGenerator.sessionToken, apiKey: "28e957dc-aff7-4575-bd0f-739ec9bc77ee", posId: "064ec3f8-8abb-414b-9eb3-49d977213967")
+        let keyConfig = KeyConfig(sessionToken: sessionToken, apiKey: apiKey, posId: posId)
         let additionalInfo = AdditionalData(method: .purchase, serverUrl: nil, products: nil, merchantMcc: nil, payload: nil)
         let customerData = CustomerData(customerEmail: "test@email.com", customerPhone: "123456789")
         

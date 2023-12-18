@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name          = 'TranzzoPaymentSDK'
-  spec.version       = '1.2.9'
+  spec.version       = '1.3.10'
   spec.summary       = 'TranzzoPaymentSDK'
   spec.description   = 'Framework for Payments'
   spec.homepage      = 'https://tranzzo.ua'

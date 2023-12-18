@@ -97,3 +97,8 @@ All notable changes to this project will be documented in this file.
     
 ### Changed
     Changed amout type from Decimal to Double
+
+## [1.3.10] - 18.12.2023
+
+#### Fixed
+    Fixed dismissing payment controller

@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         colorConfig.error_color = #colorLiteral(red: 1, green: 0.6509803922, blue: 0.6509803922, alpha: 1)
         
         
-        TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "UAH", applePay: ApplePayConfig(merchantId: "yout_merchat_id", countryCode: "UA")), uiConfig: PaymentContollerConfig(colorConfig: ColorConfig(), localizationConfig: localizationConfig))
+        TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "UAH", applePay: ApplePayConfig(merchantId: "merchant.com.tranzzo.msdk", countryCode: "UA"), enableLogging: true), uiConfig: PaymentContollerConfig(colorConfig: ColorConfig(), localizationConfig: localizationConfig))
         
         return true
     }

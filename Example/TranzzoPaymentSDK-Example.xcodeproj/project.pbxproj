@@ -14,7 +14,6 @@
 		CE18EA74280FF00F004558D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE18EA72280FF00F004558D3 /* Main.storyboard */; };
 		CE18EA76280FF012004558D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE18EA75280FF012004558D3 /* Assets.xcassets */; };
 		CE18EA79280FF012004558D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE18EA77280FF012004558D3 /* LaunchScreen.storyboard */; };
-		CE71EB9C282A738100102001 /* JWTGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71EB9B282A738100102001 /* JWTGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		CE18EA75280FF012004558D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE18EA78280FF012004558D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE18EA7A280FF012004558D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE71EB9B282A738100102001 /* JWTGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTGenerator.swift; sourceTree = "<group>"; };
 		CEE0DFD428206B3000542010 /* TranzzoPaymentSDK-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TranzzoPaymentSDK-Example.entitlements"; sourceTree = "<group>"; };
 		FCE602B34B4CEBD499AFC2EB /* Pods_TranzzoPaymentSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranzzoPaymentSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,7 +81,6 @@
 				CE18EA6C280FF00F004558D3 /* AppDelegate.swift */,
 				CE18EA6E280FF00F004558D3 /* SceneDelegate.swift */,
 				CE18EA70280FF00F004558D3 /* ViewController.swift */,
-				CE71EB9B282A738100102001 /* JWTGenerator.swift */,
 				CE18EA72280FF00F004558D3 /* Main.storyboard */,
 				CE18EA75280FF012004558D3 /* Assets.xcassets */,
 				CE18EA77280FF012004558D3 /* LaunchScreen.storyboard */,
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE18EA71280FF00F004558D3 /* ViewController.swift in Sources */,
-				CE71EB9C282A738100102001 /* JWTGenerator.swift in Sources */,
 				CE18EA6D280FF00F004558D3 /* AppDelegate.swift in Sources */,
 				CE18EA6F280FF00F004558D3 /* SceneDelegate.swift in Sources */,
 			);

@@ -6,7 +6,7 @@ target 'TranzzoPaymentSDK-Example' do
   use_frameworks!
 
   # Pods for TranzzoPaymentSDK-Example
-  pod 'TranzzoPaymentSDK', :git => 'https://github.com/tranzzo/mobile-sdk-ios.git' 
+  pod 'TranzzoPaymentSDK', :path => '../'
   pod 'SwiftJWT'
 
 end

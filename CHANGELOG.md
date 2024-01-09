@@ -102,3 +102,8 @@ All notable changes to this project will be documented in this file.
 
 #### Fixed
     Fixed dismissing payment controller
+
+## [1.3.11] - 08.01.2024
+
+#### Fixed
+    Fixed long animation for apple pay

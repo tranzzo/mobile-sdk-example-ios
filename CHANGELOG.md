@@ -41,7 +41,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.6] - 08.11.2023
 
 ### Added
- Added addditional property to PaymentInfoResponse object:
+ Added additional property to PaymentInfoResponse object:
     customerUserAgent: String?
     customerCity: String?
     rrn: String?
@@ -107,3 +107,16 @@ All notable changes to this project will be documented in this file.
 
 #### Fixed
     Fixed long animation for apple pay
+
+## [1.4.12] - 16.02.2024
+
+#### Changed 
+ Added additional property to Product object: 
+    customerEmail: String?
+    unit: ProductUnitType?
+    taxes: [ProductTaxe]?
+ Added additional property to AdditionalData object: 
+    payment3dsBypass: Payment3dsBypassType
+
+#### Fixed
+    Fixed timeZoneOffset

@@ -184,6 +184,7 @@ let customerData = CustomerData(customerEmail: "customerEmail", // required
 d) Create `AdditionalData` object that contains all additional information. 
 ```swift 
 let additionalData = AdditionalData(method: .purchase, 
+                                    payment3dsBypass: .supported,
                                     serverUrl: nil,
                                     products: nil,
                                     merchantMcc: nil,
@@ -197,8 +198,16 @@ let additionalData = AdditionalData(method: .purchase,
   }
 ```
 
->`serverUrl` - callback url on your server \
-`products` - array of products that are being paid for. \
+>`payment3dsBypass` - 3DS bypass support. Supported types:
+```swift
+  public enum Payment3dsBypassType: String, Codable {
+      case supported
+      case always
+      case never
+  }
+```
+`serverUrl` - callback url on your server \
+`products` - array of products that are being paid for. All supported fields you find on our help centre \
 `merchantMcc` - MCC for this transaction. \
 `payload` - custom string data. Max 4000 symbols.
 

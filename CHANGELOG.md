@@ -120,3 +120,8 @@ All notable changes to this project will be documented in this file.
 
 #### Fixed
     Fixed timeZoneOffset
+
+## [1.4.13] - 01.03.2024
+
+#### Changed 
+  Changed browserScreenWidth and browserScreenHeight type 

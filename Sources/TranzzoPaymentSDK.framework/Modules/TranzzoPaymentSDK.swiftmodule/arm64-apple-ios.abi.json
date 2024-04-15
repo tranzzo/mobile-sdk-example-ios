@@ -27896,14 +27896,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvp",
-            "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvp",
+            "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvp",
+            "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvp",
             "moduleName": "TranzzoPaymentSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -27919,14 +27927,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvg",
-                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvg",
+                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvg",
+                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvg",
                 "moduleName": "TranzzoPaymentSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -27946,14 +27962,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvs",
-                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvs",
+                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvs",
+                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvs",
                 "moduleName": "TranzzoPaymentSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -27973,8 +27997,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvM",
-                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSvM",
+                "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvM",
+                "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV15browserLanguageSSSgvM",
                 "moduleName": "TranzzoPaymentSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28310,10 +28334,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "hasDefaultArg": true,
-                "usr": "s:SS"
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -28338,8 +28370,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV17browserColorDepth0H12ScreenHeight0hK5Width0H11JavaEnabled0H8Language0H8TimeZone0hqR6Offset0H9UserAgentACSS_S7Stcfc",
-            "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV17browserColorDepth0H12ScreenHeight0hK5Width0H11JavaEnabled0H8Language0H8TimeZone0hqR6Offset0H9UserAgentACSS_S7Stcfc",
+            "usr": "s:17TranzzoPaymentSDK23BrowserFingerPrintModelV17browserColorDepth0H12ScreenHeight0hK5Width0H11JavaEnabled0H8Language0H8TimeZone0hqR6Offset0H9UserAgentACSS_S4SSgS3Stcfc",
+            "mangledName": "$s17TranzzoPaymentSDK23BrowserFingerPrintModelV17browserColorDepth0H12ScreenHeight0hK5Width0H11JavaEnabled0H8Language0H8TimeZone0hqR6Offset0H9UserAgentACSS_S4SSgS3Stcfc",
             "moduleName": "TranzzoPaymentSDK",
             "implicit": true,
             "init_kind": "Designated"
@@ -56281,14 +56313,14 @@
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Private\/BrowserFingerPrintModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 574,
+      "offset": 576,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Private\/BrowserFingerPrintModel.swift",
       "kind": "StringLiteral",
-      "offset": 605,
+      "offset": 607,
       "length": 40,
       "value": "\"AppleWebKit\/537.36 (KHTML, like Gecko)\""
     },

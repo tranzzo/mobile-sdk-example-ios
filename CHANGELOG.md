@@ -125,3 +125,9 @@ All notable changes to this project will be documented in this file.
 
 #### Changed 
   Changed browserScreenWidth and browserScreenHeight type 
+
+
+## [1.4.15] - 15.04.2024
+
+#### Changed 
+  Changed iso for browserLanguage  

@@ -131,3 +131,11 @@ All notable changes to this project will be documented in this file.
 
 #### Changed 
   Changed iso for browserLanguage  
+
+
+## [1.4.16] - 17.07.2024
+
+#### Changed 
+  Changed processedAmount type
+
+

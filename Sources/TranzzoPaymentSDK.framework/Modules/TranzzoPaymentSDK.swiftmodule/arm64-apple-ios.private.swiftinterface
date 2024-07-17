@@ -85,7 +85,7 @@ public struct PaymentInfoResponse : Swift.Codable {
   public let recipientPatronym: Swift.String?
   public let merchantOrderId: Swift.String?
   public let receiptUrl: Swift.String?
-  public let processedAmount: Swift.Double?
+  public let processedAmount: Foundation.Decimal?
   public let processedCurrency: Swift.String?
   public let comment: Swift.String?
   public let registryRefNo: Swift.String?

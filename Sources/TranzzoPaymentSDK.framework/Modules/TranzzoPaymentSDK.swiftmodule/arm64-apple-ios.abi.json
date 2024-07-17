@@ -3863,21 +3863,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Double?",
+                "printedName": "Foundation.Decimal?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSdSgvp",
-            "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSdSgvp",
+            "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSo9NSDecimalaSgvp",
+            "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSo9NSDecimalaSgvp",
             "moduleName": "TranzzoPaymentSDK",
             "declAttributes": [
               "HasStorage",
@@ -3894,21 +3894,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Double?",
+                    "printedName": "Foundation.Decimal?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
+                        "name": "Decimal",
+                        "printedName": "Foundation.Decimal",
+                        "usr": "c:@SA@NSDecimal"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSdSgvg",
-                "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSdSgvg",
+                "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSo9NSDecimalaSgvg",
+                "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV15processedAmountSo9NSDecimalaSgvg",
                 "moduleName": "TranzzoPaymentSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7782,13 +7782,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Double?",
+                "printedName": "Foundation.Decimal?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "usr": "s:Sq"
@@ -7851,8 +7851,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV9paymentID05orderG0012gatewayOrderG007billingjG0011transactionG003posG04mode6method6amount8currency11description6status0S4Code0S11Description18userActionRequired0vW3URL3eci3mcc10options3Ds6ccMask7ccToken17ccTokenExpiration08customerG010customerIP13customerFname13customerLname13customerEmail13customerPhone15customerCountry06resultY09createdAt14processingTime7payload13bankShortName17customerUserAgent12customerCity3rrn04authT03dcc03otpY004makebU016customerBirthday6payway16customerPatronym12terminalName16recipientCcToken15recipientCcMask8dccRates13trafficSource0I00F6System8entityId20externalTerminalName14recipientEmail14recipientPhone14recipientFname14recipientLname17recipientPatronym08merchantJ2Id10receiptUrl15processedAmount17processedCurrency7comment13registryRefNo11processedAtACSSSg_A41_A41_A41_A41_A41_A41_A41_So9NSDecimalaSgA41_A41_AA0B6StatusOA41_A41_SbSgA41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_SdSgA41_A41_A41_A41_tcfc",
-            "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV9paymentID05orderG0012gatewayOrderG007billingjG0011transactionG003posG04mode6method6amount8currency11description6status0S4Code0S11Description18userActionRequired0vW3URL3eci3mcc10options3Ds6ccMask7ccToken17ccTokenExpiration08customerG010customerIP13customerFname13customerLname13customerEmail13customerPhone15customerCountry06resultY09createdAt14processingTime7payload13bankShortName17customerUserAgent12customerCity3rrn04authT03dcc03otpY004makebU016customerBirthday6payway16customerPatronym12terminalName16recipientCcToken15recipientCcMask8dccRates13trafficSource0I00F6System8entityId20externalTerminalName14recipientEmail14recipientPhone14recipientFname14recipientLname17recipientPatronym08merchantJ2Id10receiptUrl15processedAmount17processedCurrency7comment13registryRefNo11processedAtACSSSg_A41_A41_A41_A41_A41_A41_A41_So9NSDecimalaSgA41_A41_AA0B6StatusOA41_A41_SbSgA41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_SdSgA41_A41_A41_A41_tcfc",
+            "usr": "s:17TranzzoPaymentSDK0B12InfoResponseV9paymentID05orderG0012gatewayOrderG007billingjG0011transactionG003posG04mode6method6amount8currency11description6status0S4Code0S11Description18userActionRequired0vW3URL3eci3mcc10options3Ds6ccMask7ccToken17ccTokenExpiration08customerG010customerIP13customerFname13customerLname13customerEmail13customerPhone15customerCountry06resultY09createdAt14processingTime7payload13bankShortName17customerUserAgent12customerCity3rrn04authT03dcc03otpY004makebU016customerBirthday6payway16customerPatronym12terminalName16recipientCcToken15recipientCcMask8dccRates13trafficSource0I00F6System8entityId20externalTerminalName14recipientEmail14recipientPhone14recipientFname14recipientLname17recipientPatronym08merchantJ2Id10receiptUrl15processedAmount17processedCurrency7comment13registryRefNo11processedAtACSSSg_A41_A41_A41_A41_A41_A41_A41_So9NSDecimalaSgA41_A41_AA0B6StatusOA41_A41_SbSgA41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A44_A41_A41_A41_A41_tcfc",
+            "mangledName": "$s17TranzzoPaymentSDK0B12InfoResponseV9paymentID05orderG0012gatewayOrderG007billingjG0011transactionG003posG04mode6method6amount8currency11description6status0S4Code0S11Description18userActionRequired0vW3URL3eci3mcc10options3Ds6ccMask7ccToken17ccTokenExpiration08customerG010customerIP13customerFname13customerLname13customerEmail13customerPhone15customerCountry06resultY09createdAt14processingTime7payload13bankShortName17customerUserAgent12customerCity3rrn04authT03dcc03otpY004makebU016customerBirthday6payway16customerPatronym12terminalName16recipientCcToken15recipientCcMask8dccRates13trafficSource0I00F6System8entityId20externalTerminalName14recipientEmail14recipientPhone14recipientFname14recipientLname17recipientPatronym08merchantJ2Id10receiptUrl15processedAmount17processedCurrency7comment13registryRefNo11processedAtACSSSg_A41_A41_A41_A41_A41_A41_A41_So9NSDecimalaSgA41_A41_AA0B6StatusOA41_A41_SbSgA41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A41_A44_A41_A41_A41_A41_tcfc",
             "moduleName": "TranzzoPaymentSDK",
             "implicit": true,
             "init_kind": "Designated"
@@ -24399,8 +24399,8 @@
           },
           {
             "kind": "Var",
-            "name": "isCreatedApplePayTransaction",
-            "printedName": "isCreatedApplePayTransaction",
+            "name": "applePayCreatePaymentResponse",
+            "printedName": "applePayCreatePaymentResponse",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24418,8 +24418,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:17TranzzoPaymentSDK0B14ViewControllerC28isCreatedApplePayTransaction33_C5E5FE81A527CDBAF8C3F7FDEB054B2CLLAA06CreateB8ResponseVSgvp",
-            "mangledName": "$s17TranzzoPaymentSDK0B14ViewControllerC28isCreatedApplePayTransaction33_C5E5FE81A527CDBAF8C3F7FDEB054B2CLLAA06CreateB8ResponseVSgvp",
+            "usr": "s:17TranzzoPaymentSDK0B14ViewControllerC014applePayCreateB8Response33_C5E5FE81A527CDBAF8C3F7FDEB054B2CLLAA0hbI0VSgvp",
+            "mangledName": "$s17TranzzoPaymentSDK0B14ViewControllerC014applePayCreateB8Response33_C5E5FE81A527CDBAF8C3F7FDEB054B2CLLAA0hbI0VSgvp",
             "moduleName": "TranzzoPaymentSDK",
             "isInternal": true,
             "declAttributes": [
@@ -32262,21 +32262,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Foundation.Decimal?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSSSgvp",
-            "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSSSgvp",
+            "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSo9NSDecimalaSgvp",
+            "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSo9NSDecimalaSgvp",
             "moduleName": "TranzzoPaymentSDK",
             "declAttributes": [
               "HasStorage"
@@ -32293,21 +32293,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Decimal?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Decimal",
+                        "printedName": "Foundation.Decimal",
+                        "usr": "c:@SA@NSDecimal"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSSSgvg",
-                "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSSSgvg",
+                "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSo9NSDecimalaSgvg",
+                "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15processedAmountSo9NSDecimalaSgvg",
                 "moduleName": "TranzzoPaymentSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -35994,13 +35994,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Foundation.Decimal?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "usr": "s:Sq"
@@ -36035,8 +36035,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15customerCountry3eci7ccToken0F5Fname3mcc0I4Mask4mode7payload5posID0F9UserAgent0F4City011transactionQ013userActionURL012billingOrderQ017statusDescription06resultX06method0F5Phone07gatewayzQ03rrn8authCode0vW8Required0F5Email05orderQ06status13registryRefNo10statusCode3dcc03otpX00F2IP04makeB11Description9createdAt0F8Birthday10options3Ds07paymentQ011processedAt8currency6amount6payway0iJ10Expiration0F5Lname0fQ00F8Patronym12terminalName011recipientCcJ0011recipientCcM08dccRates13trafficSource7gateway13bankShortName14payment_system8entityId20externalTerminalName14recipientEmail14recipientPhone09recipientK014recipientLname17recipientPatronym08merchantZ2Id10receiptUrl15processedAmount17processedCurrency7commentACSSSg_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_SbA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_So9NSDecimalaSgA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_tcfc",
-            "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15customerCountry3eci7ccToken0F5Fname3mcc0I4Mask4mode7payload5posID0F9UserAgent0F4City011transactionQ013userActionURL012billingOrderQ017statusDescription06resultX06method0F5Phone07gatewayzQ03rrn8authCode0vW8Required0F5Email05orderQ06status13registryRefNo10statusCode3dcc03otpX00F2IP04makeB11Description9createdAt0F8Birthday10options3Ds07paymentQ011processedAt8currency6amount6payway0iJ10Expiration0F5Lname0fQ00F8Patronym12terminalName011recipientCcJ0011recipientCcM08dccRates13trafficSource7gateway13bankShortName14payment_system8entityId20externalTerminalName14recipientEmail14recipientPhone09recipientK014recipientLname17recipientPatronym08merchantZ2Id10receiptUrl15processedAmount17processedCurrency7commentACSSSg_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_SbA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_So9NSDecimalaSgA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_tcfc",
+            "usr": "s:17TranzzoPaymentSDK06CreateB8ResponseV15customerCountry3eci7ccToken0F5Fname3mcc0I4Mask4mode7payload5posID0F9UserAgent0F4City011transactionQ013userActionURL012billingOrderQ017statusDescription06resultX06method0F5Phone07gatewayzQ03rrn8authCode0vW8Required0F5Email05orderQ06status13registryRefNo10statusCode3dcc03otpX00F2IP04makeB11Description9createdAt0F8Birthday10options3Ds07paymentQ011processedAt8currency6amount6payway0iJ10Expiration0F5Lname0fQ00F8Patronym12terminalName011recipientCcJ0011recipientCcM08dccRates13trafficSource7gateway13bankShortName14payment_system8entityId20externalTerminalName14recipientEmail14recipientPhone09recipientK014recipientLname17recipientPatronym08merchantZ2Id10receiptUrl15processedAmount17processedCurrency7commentACSSSg_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_SbA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_So9NSDecimalaSgA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A42_A39_A39_tcfc",
+            "mangledName": "$s17TranzzoPaymentSDK06CreateB8ResponseV15customerCountry3eci7ccToken0F5Fname3mcc0I4Mask4mode7payload5posID0F9UserAgent0F4City011transactionQ013userActionURL012billingOrderQ017statusDescription06resultX06method0F5Phone07gatewayzQ03rrn8authCode0vW8Required0F5Email05orderQ06status13registryRefNo10statusCode3dcc03otpX00F2IP04makeB11Description9createdAt0F8Birthday10options3Ds07paymentQ011processedAt8currency6amount6payway0iJ10Expiration0F5Lname0fQ00F8Patronym12terminalName011recipientCcJ0011recipientCcM08dccRates13trafficSource7gateway13bankShortName14payment_system8entityId20externalTerminalName14recipientEmail14recipientPhone09recipientK014recipientLname17recipientPatronym08merchantZ2Id10receiptUrl15processedAmount17processedCurrency7commentACSSSg_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_SbA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_So9NSDecimalaSgA39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A39_A42_A39_A39_tcfc",
             "moduleName": "TranzzoPaymentSDK",
             "implicit": true,
             "init_kind": "Designated"
@@ -54962,910 +54962,910 @@
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3009,
+      "offset": 3010,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3045,
+      "offset": 3046,
       "length": 10,
       "value": "\"order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3086,
+      "offset": 3087,
       "length": 18,
       "value": "\"gateway_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3136,
       "length": 18,
       "value": "\"billing_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3183,
+      "offset": 3184,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3222,
       "length": 8,
       "value": "\"pos_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3250,
+      "offset": 3251,
       "length": 6,
       "value": "\"mode\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3280,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3310,
+      "offset": 3311,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3343,
+      "offset": 3344,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3382,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3418,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3452,
+      "offset": 3453,
       "length": 13,
       "value": "\"status_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3499,
+      "offset": 3500,
       "length": 20,
       "value": "\"status_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3554,
+      "offset": 3555,
       "length": 22,
       "value": "\"user_action_required\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3606,
+      "offset": 3607,
       "length": 17,
       "value": "\"user_action_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3643,
+      "offset": 3644,
       "length": 5,
       "value": "\"eci\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3668,
+      "offset": 3669,
       "length": 5,
       "value": "\"mcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3700,
+      "offset": 3701,
       "length": 13,
       "value": "\"options_3ds\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 3737,
       "length": 9,
       "value": "\"cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3769,
+      "offset": 3770,
       "length": 10,
       "value": "\"cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3813,
+      "offset": 3814,
       "length": 21,
       "value": "\"cc_token_expiration\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3861,
+      "offset": 3862,
       "length": 13,
       "value": "\"customer_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3901,
+      "offset": 3902,
       "length": 13,
       "value": "\"customer_ip\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 3945,
       "length": 16,
       "value": "\"customer_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3990,
+      "offset": 3991,
       "length": 16,
       "value": "\"customer_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4036,
+      "offset": 4037,
       "length": 16,
       "value": "\"customer_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4082,
+      "offset": 4083,
       "length": 16,
       "value": "\"customer_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 4131,
       "length": 18,
       "value": "\"customer_country\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4174,
+      "offset": 4175,
       "length": 12,
       "value": "\"result_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4212,
+      "offset": 4213,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4255,
+      "offset": 4256,
       "length": 17,
       "value": "\"processing_time\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4296,
+      "offset": 4297,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4335,
+      "offset": 4336,
       "length": 17,
       "value": "\"bank_short_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4386,
+      "offset": 4387,
       "length": 21,
       "value": "\"customer_user_agent\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4437,
       "length": 15,
       "value": "\"customer_city\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4471,
+      "offset": 4472,
       "length": 5,
       "value": "\"rrn\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4502,
       "length": 11,
       "value": "\"auth_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4532,
+      "offset": 4533,
       "length": 5,
       "value": "\"dcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4560,
+      "offset": 4561,
       "length": 9,
       "value": "\"otp_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4608,
+      "offset": 4609,
       "length": 26,
       "value": "\"make_payment_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4667,
+      "offset": 4668,
       "length": 19,
       "value": "\"customer_birthday\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4709,
+      "offset": 4710,
       "length": 8,
       "value": "\"payway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4750,
+      "offset": 4751,
       "length": 19,
       "value": "\"customer_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4798,
+      "offset": 4799,
       "length": 15,
       "value": "\"terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 4847,
       "length": 20,
       "value": "\"recipient_cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4898,
+      "offset": 4899,
       "length": 19,
       "value": "\"recipient_cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4942,
+      "offset": 4943,
       "length": 11,
       "value": "\"dcc_rates\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4983,
+      "offset": 4984,
       "length": 16,
       "value": "\"traffic_source\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5024,
       "length": 9,
       "value": "\"gateway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5062,
+      "offset": 5063,
       "length": 16,
       "value": "\"payment_system\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5103,
+      "offset": 5104,
       "length": 11,
       "value": "\"entity_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5151,
+      "offset": 5152,
       "length": 24,
       "value": "\"external_terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5206,
+      "offset": 5207,
       "length": 17,
       "value": "\"recipient_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5254,
+      "offset": 5255,
       "length": 17,
       "value": "\"recipient_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5303,
       "length": 17,
       "value": "\"recipient_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5350,
+      "offset": 5351,
       "length": 17,
       "value": "\"recipient_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5401,
+      "offset": 5402,
       "length": 20,
       "value": "\"recipient_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5453,
+      "offset": 5454,
       "length": 19,
       "value": "\"merchant_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5499,
+      "offset": 5500,
       "length": 13,
       "value": "\"receipt_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5544,
+      "offset": 5545,
       "length": 18,
       "value": "\"processed_amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5596,
+      "offset": 5597,
       "length": 20,
       "value": "\"processed_currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5640,
+      "offset": 5641,
       "length": 9,
       "value": "\"comment\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5679,
+      "offset": 5680,
       "length": 17,
       "value": "\"registry_ref_no\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5724,
+      "offset": 5725,
       "length": 14,
       "value": "\"processed_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3009,
+      "offset": 3010,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3045,
+      "offset": 3046,
       "length": 10,
       "value": "\"order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3086,
+      "offset": 3087,
       "length": 18,
       "value": "\"gateway_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3136,
       "length": 18,
       "value": "\"billing_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3183,
+      "offset": 3184,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3222,
       "length": 8,
       "value": "\"pos_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3250,
+      "offset": 3251,
       "length": 6,
       "value": "\"mode\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3280,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3310,
+      "offset": 3311,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3343,
+      "offset": 3344,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3382,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3418,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3452,
+      "offset": 3453,
       "length": 13,
       "value": "\"status_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3499,
+      "offset": 3500,
       "length": 20,
       "value": "\"status_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3554,
+      "offset": 3555,
       "length": 22,
       "value": "\"user_action_required\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3606,
+      "offset": 3607,
       "length": 17,
       "value": "\"user_action_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3643,
+      "offset": 3644,
       "length": 5,
       "value": "\"eci\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3668,
+      "offset": 3669,
       "length": 5,
       "value": "\"mcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3700,
+      "offset": 3701,
       "length": 13,
       "value": "\"options_3ds\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 3737,
       "length": 9,
       "value": "\"cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3769,
+      "offset": 3770,
       "length": 10,
       "value": "\"cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3813,
+      "offset": 3814,
       "length": 21,
       "value": "\"cc_token_expiration\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3861,
+      "offset": 3862,
       "length": 13,
       "value": "\"customer_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3901,
+      "offset": 3902,
       "length": 13,
       "value": "\"customer_ip\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 3945,
       "length": 16,
       "value": "\"customer_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3990,
+      "offset": 3991,
       "length": 16,
       "value": "\"customer_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4036,
+      "offset": 4037,
       "length": 16,
       "value": "\"customer_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4082,
+      "offset": 4083,
       "length": 16,
       "value": "\"customer_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 4131,
       "length": 18,
       "value": "\"customer_country\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4174,
+      "offset": 4175,
       "length": 12,
       "value": "\"result_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4212,
+      "offset": 4213,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4255,
+      "offset": 4256,
       "length": 17,
       "value": "\"processing_time\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4296,
+      "offset": 4297,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4335,
+      "offset": 4336,
       "length": 17,
       "value": "\"bank_short_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4386,
+      "offset": 4387,
       "length": 21,
       "value": "\"customer_user_agent\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4437,
       "length": 15,
       "value": "\"customer_city\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4471,
+      "offset": 4472,
       "length": 5,
       "value": "\"rrn\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4502,
       "length": 11,
       "value": "\"auth_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4532,
+      "offset": 4533,
       "length": 5,
       "value": "\"dcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4560,
+      "offset": 4561,
       "length": 9,
       "value": "\"otp_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4608,
+      "offset": 4609,
       "length": 26,
       "value": "\"make_payment_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4667,
+      "offset": 4668,
       "length": 19,
       "value": "\"customer_birthday\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4709,
+      "offset": 4710,
       "length": 8,
       "value": "\"payway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4750,
+      "offset": 4751,
       "length": 19,
       "value": "\"customer_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4798,
+      "offset": 4799,
       "length": 15,
       "value": "\"terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 4847,
       "length": 20,
       "value": "\"recipient_cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4898,
+      "offset": 4899,
       "length": 19,
       "value": "\"recipient_cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4942,
+      "offset": 4943,
       "length": 11,
       "value": "\"dcc_rates\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4983,
+      "offset": 4984,
       "length": 16,
       "value": "\"traffic_source\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5024,
       "length": 9,
       "value": "\"gateway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5062,
+      "offset": 5063,
       "length": 16,
       "value": "\"payment_system\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5103,
+      "offset": 5104,
       "length": 11,
       "value": "\"entity_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5151,
+      "offset": 5152,
       "length": 24,
       "value": "\"external_terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5206,
+      "offset": 5207,
       "length": 17,
       "value": "\"recipient_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5254,
+      "offset": 5255,
       "length": 17,
       "value": "\"recipient_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5303,
       "length": 17,
       "value": "\"recipient_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5350,
+      "offset": 5351,
       "length": 17,
       "value": "\"recipient_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5401,
+      "offset": 5402,
       "length": 20,
       "value": "\"recipient_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5453,
+      "offset": 5454,
       "length": 19,
       "value": "\"merchant_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5499,
+      "offset": 5500,
       "length": 13,
       "value": "\"receipt_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5544,
+      "offset": 5545,
       "length": 18,
       "value": "\"processed_amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5596,
+      "offset": 5597,
       "length": 20,
       "value": "\"processed_currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5640,
+      "offset": 5641,
       "length": 9,
       "value": "\"comment\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5679,
+      "offset": 5680,
       "length": 17,
       "value": "\"registry_ref_no\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/PaymentInfo\/PaymentInfoResponse.swift",
       "kind": "StringLiteral",
-      "offset": 5724,
+      "offset": 5725,
       "length": 14,
       "value": "\"processed_at\""
     },
@@ -56327,882 +56327,882 @@
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2090,
       "length": 18,
       "value": "\"customer_country\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2127,
+      "offset": 2128,
       "length": 5,
       "value": "\"eci\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2156,
+      "offset": 2157,
       "length": 10,
       "value": "\"cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2197,
       "length": 16,
       "value": "\"customer_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2232,
+      "offset": 2233,
       "length": 5,
       "value": "\"mcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2261,
       "length": 9,
       "value": "\"cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2291,
       "length": 6,
       "value": "\"mode\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2320,
+      "offset": 2321,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2351,
+      "offset": 2352,
       "length": 8,
       "value": "\"pos_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2394,
       "length": 21,
       "value": "\"customer_user_agent\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2444,
       "length": 15,
       "value": "\"customer_city\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2488,
+      "offset": 2489,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2535,
       "length": 17,
       "value": "\"user_action_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2582,
+      "offset": 2583,
       "length": 18,
       "value": "\"billing_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2635,
       "length": 20,
       "value": "\"status_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2681,
       "length": 12,
       "value": "\"result_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2715,
+      "offset": 2716,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2754,
       "length": 16,
       "value": "\"customer_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2800,
+      "offset": 2801,
       "length": 18,
       "value": "\"gateway_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2838,
+      "offset": 2839,
       "length": 5,
       "value": "\"rrn\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 2869,
       "length": 11,
       "value": "\"auth_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2914,
+      "offset": 2915,
       "length": 22,
       "value": "\"user_action_required\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2966,
+      "offset": 2967,
       "length": 16,
       "value": "\"customer_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3006,
+      "offset": 3007,
       "length": 10,
       "value": "\"order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 3040,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3077,
+      "offset": 3078,
       "length": 17,
       "value": "\"registry_ref_no\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3121,
+      "offset": 3122,
       "length": 13,
       "value": "\"status_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3154,
+      "offset": 3155,
       "length": 5,
       "value": "\"dcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 3183,
       "length": 9,
       "value": "\"otp_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3218,
+      "offset": 3219,
       "length": 13,
       "value": "\"customer_ip\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3270,
+      "offset": 3271,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3309,
+      "offset": 3310,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3354,
+      "offset": 3355,
       "length": 19,
       "value": "\"customer_birthday\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3401,
       "length": 13,
       "value": "\"options_3ds\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3439,
+      "offset": 3440,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3479,
+      "offset": 3480,
       "length": 14,
       "value": "\"processed_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3519,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3551,
+      "offset": 3552,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3582,
+      "offset": 3583,
       "length": 8,
       "value": "\"payway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3624,
+      "offset": 3625,
       "length": 21,
       "value": "\"cc_token_expiration\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3675,
+      "offset": 3676,
       "length": 16,
       "value": "\"customer_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3719,
       "length": 13,
       "value": "\"customer_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3764,
+      "offset": 3765,
       "length": 19,
       "value": "\"customer_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 3813,
       "length": 15,
       "value": "\"terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3860,
+      "offset": 3861,
       "length": 20,
       "value": "\"recipient_cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3912,
+      "offset": 3913,
       "length": 19,
       "value": "\"recipient_cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3956,
+      "offset": 3957,
       "length": 11,
       "value": "\"dcc_rates\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3997,
+      "offset": 3998,
       "length": 16,
       "value": "\"traffic_source\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4037,
+      "offset": 4038,
       "length": 9,
       "value": "\"gateway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4076,
+      "offset": 4077,
       "length": 17,
       "value": "\"bank_short_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4124,
+      "offset": 4125,
       "length": 16,
       "value": "\"payment_system\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4165,
+      "offset": 4166,
       "length": 11,
       "value": "\"entity_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4213,
+      "offset": 4214,
       "length": 24,
       "value": "\"external_terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4268,
+      "offset": 4269,
       "length": 17,
       "value": "\"recipient_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4316,
+      "offset": 4317,
       "length": 17,
       "value": "\"recipient_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4365,
       "length": 17,
       "value": "\"recipient_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4412,
+      "offset": 4413,
       "length": 17,
       "value": "\"recipient_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4463,
+      "offset": 4464,
       "length": 20,
       "value": "\"recipient_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4515,
+      "offset": 4516,
       "length": 19,
       "value": "\"merchant_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4561,
+      "offset": 4562,
       "length": 13,
       "value": "\"receipt_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4606,
+      "offset": 4607,
       "length": 18,
       "value": "\"processed_amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4658,
+      "offset": 4659,
       "length": 20,
       "value": "\"processed_currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4702,
+      "offset": 4703,
       "length": 9,
       "value": "\"comment\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2090,
       "length": 18,
       "value": "\"customer_country\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2127,
+      "offset": 2128,
       "length": 5,
       "value": "\"eci\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2156,
+      "offset": 2157,
       "length": 10,
       "value": "\"cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2197,
       "length": 16,
       "value": "\"customer_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2232,
+      "offset": 2233,
       "length": 5,
       "value": "\"mcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2261,
       "length": 9,
       "value": "\"cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2291,
       "length": 6,
       "value": "\"mode\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2320,
+      "offset": 2321,
       "length": 9,
       "value": "\"payload\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2351,
+      "offset": 2352,
       "length": 8,
       "value": "\"pos_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2394,
       "length": 21,
       "value": "\"customer_user_agent\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2444,
       "length": 15,
       "value": "\"customer_city\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2488,
+      "offset": 2489,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2535,
       "length": 17,
       "value": "\"user_action_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2582,
+      "offset": 2583,
       "length": 18,
       "value": "\"billing_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2635,
       "length": 20,
       "value": "\"status_description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2681,
       "length": 12,
       "value": "\"result_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2715,
+      "offset": 2716,
       "length": 8,
       "value": "\"method\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2754,
       "length": 16,
       "value": "\"customer_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2800,
+      "offset": 2801,
       "length": 18,
       "value": "\"gateway_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2838,
+      "offset": 2839,
       "length": 5,
       "value": "\"rrn\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 2869,
       "length": 11,
       "value": "\"auth_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2914,
+      "offset": 2915,
       "length": 22,
       "value": "\"user_action_required\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2966,
+      "offset": 2967,
       "length": 16,
       "value": "\"customer_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3006,
+      "offset": 3007,
       "length": 10,
       "value": "\"order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 3040,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3077,
+      "offset": 3078,
       "length": 17,
       "value": "\"registry_ref_no\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3121,
+      "offset": 3122,
       "length": 13,
       "value": "\"status_code\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3154,
+      "offset": 3155,
       "length": 5,
       "value": "\"dcc\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 3183,
       "length": 9,
       "value": "\"otp_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3218,
+      "offset": 3219,
       "length": 13,
       "value": "\"customer_ip\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3270,
+      "offset": 3271,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3309,
+      "offset": 3310,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3354,
+      "offset": 3355,
       "length": 19,
       "value": "\"customer_birthday\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3401,
       "length": 13,
       "value": "\"options_3ds\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3439,
+      "offset": 3440,
       "length": 12,
       "value": "\"payment_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3479,
+      "offset": 3480,
       "length": 14,
       "value": "\"processed_at\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3519,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3551,
+      "offset": 3552,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3582,
+      "offset": 3583,
       "length": 8,
       "value": "\"payway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3624,
+      "offset": 3625,
       "length": 21,
       "value": "\"cc_token_expiration\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3675,
+      "offset": 3676,
       "length": 16,
       "value": "\"customer_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3719,
       "length": 13,
       "value": "\"customer_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3764,
+      "offset": 3765,
       "length": 19,
       "value": "\"customer_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 3813,
       "length": 15,
       "value": "\"terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3860,
+      "offset": 3861,
       "length": 20,
       "value": "\"recipient_cc_token\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3912,
+      "offset": 3913,
       "length": 19,
       "value": "\"recipient_cc_mask\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3956,
+      "offset": 3957,
       "length": 11,
       "value": "\"dcc_rates\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 3997,
+      "offset": 3998,
       "length": 16,
       "value": "\"traffic_source\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4037,
+      "offset": 4038,
       "length": 9,
       "value": "\"gateway\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4076,
+      "offset": 4077,
       "length": 17,
       "value": "\"bank_short_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4124,
+      "offset": 4125,
       "length": 16,
       "value": "\"payment_system\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4165,
+      "offset": 4166,
       "length": 11,
       "value": "\"entity_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4213,
+      "offset": 4214,
       "length": 24,
       "value": "\"external_terminal_name\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4268,
+      "offset": 4269,
       "length": 17,
       "value": "\"recipient_email\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4316,
+      "offset": 4317,
       "length": 17,
       "value": "\"recipient_phone\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4365,
       "length": 17,
       "value": "\"recipient_fname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4412,
+      "offset": 4413,
       "length": 17,
       "value": "\"recipient_lname\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4463,
+      "offset": 4464,
       "length": 20,
       "value": "\"recipient_patronym\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4515,
+      "offset": 4516,
       "length": 19,
       "value": "\"merchant_order_id\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4561,
+      "offset": 4562,
       "length": 13,
       "value": "\"receipt_url\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4606,
+      "offset": 4607,
       "length": 18,
       "value": "\"processed_amount\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4658,
+      "offset": 4659,
       "length": 20,
       "value": "\"processed_currency\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Services\/API\/CreatePayment\/CreatePaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 4702,
+      "offset": 4703,
       "length": 9,
       "value": "\"comment\""
     },

@@ -1,0 +1,4 @@
+framework module TranzzoPaymentSDK {
+  header "TranzzoPaymentSDK-Swift.h"
+  requires objc
+}

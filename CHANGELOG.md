@@ -139,3 +139,14 @@ All notable changes to this project will be documented in this file.
   Changed processedAmount type
 
 
+## [1.5.17] - 01.08.2024
+
+#### Changed 
+  Moved property payment3dsBypass from AdditionalData to PaymentType object
+  Moved property method from AdditionalData to PaymentType object
+#### Added
+  Added new card scanner
+  Added lookup payment method
+  Added arm64 support
+#### Fixed 
+  Fixed compilation error

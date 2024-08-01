@@ -44,7 +44,7 @@ class ViewController: UIViewController {
                                                tokenCards: tokenCards)
                                     
         let keyConfig = KeyConfig(sessionToken: sessionToken, apiKey: apiKey, posId: posId)
-        let additionalData = AdditionalData(method: .purchase, payment3dsBypass: .supported, serverUrl: nil, products: products, merchantMcc: nil, payload: nil)
+        let additionalData = AdditionalData(serverUrl: nil, products: products, merchantMcc: nil, payload: nil)
         let customerData = CustomerData(customerEmail: "test@email.com", customerPhone: "0506426008")
         
         TranzzoPaymentSDK.makePayment(rootController: self,
@@ -63,12 +63,33 @@ class ViewController: UIViewController {
                                                  description: "Test product",
                                                  tokenCards: tokenCards)
         let keyConfig = KeyConfig(sessionToken: sessionToken, apiKey: apiKey, posId: posId)
-        let additionalInfo = AdditionalData(method: .purchase, payment3dsBypass: .supported, serverUrl: nil, products: products, merchantMcc: nil, payload: nil)
+        let additionalData = AdditionalData(serverUrl: nil, products: products, merchantMcc: nil, payload: nil)
         let customerData = CustomerData(customerEmail: "test@email.com", customerPhone: "0506426008")
         
-        TranzzoPaymentSDK.makePayment(rootController: self, delegate: self, paymentData: PaymentData(type: paymentType, keyConfig: keyConfig, customerData: customerData, additionalData: additionalInfo))
+        TranzzoPaymentSDK.makePayment(rootController: self, delegate: self, paymentData: PaymentData(type: paymentType, keyConfig: keyConfig, customerData: customerData, additionalData: additionalData))
     }
     
+    @IBAction private func lookupButtonTapped(_ sender: AnyObject) {
+        let paymentType = LookupPaymentType(orderId: UUID().uuidString, description: "Test description")
+
+        let keyConfig = KeyConfig(sessionToken: sessionToken,
+                                  apiKey: apiKey,
+                                  posId: posId)
+
+        let additionalData = AdditionalData(serverUrl: nil,
+                                            products: nil,
+                                            merchantMcc: nil,
+                                            payload: nil)
+        let customerData = CustomerData(customerEmail: "tempmail@gmail.com",
+                                        customerPhone: "380506541111")
+        
+        TranzzoPaymentSDK.makePayment(rootController: self,
+                                      delegate: self,
+                                      paymentData: PaymentData(type: paymentType,
+                                                               keyConfig: keyConfig,
+                                                               customerData: customerData,
+                                                               additionalData: additionalData))
+    }
 }
 
 extension ViewController: TranzzoPaymentDelegate {

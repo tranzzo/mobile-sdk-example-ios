@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F8644B8E53AF6E540B6B037 /* Pods_TranzzoPaymentSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE602B34B4CEBD499AFC2EB /* Pods_TranzzoPaymentSDK_Example.framework */; };
+		1392E8E9350CA657EBD8E2B2 /* Pods_TranzzoPaymentSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D8461F7D1D25B48B915C9E /* Pods_TranzzoPaymentSDK_Example.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CE18EA6D280FF00F004558D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18EA6C280FF00F004558D3 /* AppDelegate.swift */; };
 		CE18EA6F280FF00F004558D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18EA6E280FF00F004558D3 /* SceneDelegate.swift */; };
 		CE18EA71280FF00F004558D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18EA70280FF00F004558D3 /* ViewController.swift */; };
@@ -17,10 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C0BEAAC26FA853EDCD0DA37 /* Pods-TranzzoPaymentsSDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentsSDK-Example.debug.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentsSDK-Example/Pods-TranzzoPaymentsSDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3EC55B680B3D561879E0F4D9 /* Pods-TranzzoPaymentsSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentsSDK-Example.release.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentsSDK-Example/Pods-TranzzoPaymentsSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
-		4FD427E2085061B88BE30AF1 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentSDK-Example.release.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentSDK-Example/Pods-TranzzoPaymentSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
-		6E2946FECE286B4AA2052560 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentSDK-Example.debug.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentSDK-Example/Pods-TranzzoPaymentSDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1BE30B556D2AC3DF814F5115 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentSDK-Example.release.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentSDK-Example/Pods-TranzzoPaymentSDK-Example.release.xcconfig"; sourceTree = "<group>"; };
+		5F0C5F738055A2E6B2246313 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranzzoPaymentSDK-Example.debug.xcconfig"; path = "Target Support Files/Pods-TranzzoPaymentSDK-Example/Pods-TranzzoPaymentSDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CE18EA69280FF00F004558D3 /* TranzzoPaymentSDK-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TranzzoPaymentSDK-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE18EA6C280FF00F004558D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE18EA6E280FF00F004558D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +28,7 @@
 		CE18EA78280FF012004558D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE18EA7A280FF012004558D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE0DFD428206B3000542010 /* TranzzoPaymentSDK-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TranzzoPaymentSDK-Example.entitlements"; sourceTree = "<group>"; };
-		FCE602B34B4CEBD499AFC2EB /* Pods_TranzzoPaymentSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranzzoPaymentSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D8461F7D1D25B48B915C9E /* Pods_TranzzoPaymentSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranzzoPaymentSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,20 +36,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8644B8E53AF6E540B6B037 /* Pods_TranzzoPaymentSDK_Example.framework in Frameworks */,
+				1392E8E9350CA657EBD8E2B2 /* Pods_TranzzoPaymentSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3A626D003AE42A22BA64AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D8461F7D1D25B48B915C9E /* Pods_TranzzoPaymentSDK_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CAD9EAC9E228CB17523B9586 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1C0BEAAC26FA853EDCD0DA37 /* Pods-TranzzoPaymentsSDK-Example.debug.xcconfig */,
-				3EC55B680B3D561879E0F4D9 /* Pods-TranzzoPaymentsSDK-Example.release.xcconfig */,
-				6E2946FECE286B4AA2052560 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */,
-				4FD427E2085061B88BE30AF1 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */,
+				5F0C5F738055A2E6B2246313 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */,
+				1BE30B556D2AC3DF814F5115 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -62,7 +66,7 @@
 				CE18EA6B280FF00F004558D3 /* TranzzoPaymentSDK-Example */,
 				CE18EA6A280FF00F004558D3 /* Products */,
 				CAD9EAC9E228CB17523B9586 /* Pods */,
-				E2E47FE1CE2C8AC94A32147C /* Frameworks */,
+				3A3A626D003AE42A22BA64AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,14 +93,6 @@
 			path = "TranzzoPaymentSDK-Example";
 			sourceTree = "<group>";
 		};
-		E2E47FE1CE2C8AC94A32147C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FCE602B34B4CEBD499AFC2EB /* Pods_TranzzoPaymentSDK_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,11 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE18EA7D280FF012004558D3 /* Build configuration list for PBXNativeTarget "TranzzoPaymentSDK-Example" */;
 			buildPhases = (
-				87415E96E38FBC9034FF78AA /* [CP] Check Pods Manifest.lock */,
+				8549D0959659165A04100E4F /* [CP] Check Pods Manifest.lock */,
 				CE18EA65280FF00F004558D3 /* Sources */,
 				CE18EA66280FF00F004558D3 /* Frameworks */,
 				CE18EA67280FF00F004558D3 /* Resources */,
-				205BEAB52BF6BF26290D846D /* [CP] Embed Pods Frameworks */,
+				0533C1C730270D938A82D5BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		205BEAB52BF6BF26290D846D /* [CP] Embed Pods Frameworks */ = {
+		0533C1C730270D938A82D5BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,7 +179,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranzzoPaymentSDK-Example/Pods-TranzzoPaymentSDK-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		87415E96E38FBC9034FF78AA /* [CP] Check Pods Manifest.lock */ = {
+		8549D0959659165A04100E4F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,7 +352,7 @@
 		};
 		CE18EA7E280FF012004558D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E2946FECE286B4AA2052560 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */;
+			baseConfigurationReference = 5F0C5F738055A2E6B2246313 /* Pods-TranzzoPaymentSDK-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,7 +386,7 @@
 		};
 		CE18EA7F280FF012004558D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FD427E2085061B88BE30AF1 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */;
+			baseConfigurationReference = 1BE30B556D2AC3DF814F5115 /* Pods-TranzzoPaymentSDK-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

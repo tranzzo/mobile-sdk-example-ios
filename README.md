@@ -5,7 +5,7 @@
 
 
 # Requirements
-TranzzoPaymentSDK is written in Swift 5+. iOS 11.0+ Required
+TranzzoPaymentSDK is written in Swift 5+. iOS 13.0+ Required
 
 # Install
 With Cocoapods
@@ -27,7 +27,7 @@ Init the TranzzoPaymentSDK library in the AppDelegate. For example:
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
-    TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "currency"))
+    TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "currency", enableLogging: true))
     
     return true
 }
@@ -77,6 +77,7 @@ colorConfig.error_color = .red
 
 var localizationConfig = LocalizationConfig()
 localizationConfig.main_title = "main_title"
+localizationConfig.lookup_pay_button_title = "lookup_pay_button_title"
 localizationConfig.enter_amount_title = "enter_amount_title"
 localizationConfig.enter_amount_placeholder = "enter_amount_placeholder"
 localizationConfig.pay_via_card_title = "pay_via_card_title"
@@ -109,7 +110,25 @@ let paymentType = FixedAmountPaymentType(orderId: "your_order_id",
                                             TokenCardModel(mask: "card_mask", 
                                                            token: "card_token",
                                                            isDefault: true)
-                                        ])
+                                                           ],
+                                        method: .purchase,
+                                        payment3dsBypass: .supported)
+```
+>`method` - payment method according with your business. Supported types:
+``` swift
+  public enum PaymentMethodType: String, Codable {
+      case auth // two-step payment. Amount is simply hold on payer's card. For actual charging, complete the transaction with capture method.
+      case purchase // one-step payment. Charges customer's card for specified amount (used by default)
+  }
+```
+
+>`payment3dsBypass` - 3DS bypass support. Supported types:
+```swift
+  public enum Payment3dsBypassType: String, Codable {
+      case supported
+      case always
+      case never
+  }
 ```
 >`description` is the text will be displayed to user on the payment screen. Please, provide a readable product description.
 `tokenCards` - array of already tokenized cards (TokenCardModel), `nil` by default   
@@ -133,8 +152,26 @@ let paymentType = AnyAmountPaymentType(orderId: UUID().uuidString,
                                             TokenCardModel(mask: "card_mask", 
                                                            token: "card_token",
                                                            isDefault: true)
-                                        ])
+                                                           ],
+                                        method: .purchase,
+                                        payment3dsBypass: .supported)
 
+```
+>`method` - payment method according with your business. Supported types:
+``` swift
+  public enum PaymentMethodType: String, Codable {
+      case auth // two-step payment. Amount is simply hold on payer's card. For actual charging, complete the transaction with capture method.
+      case purchase // one-step payment. Charges customer's card for specified amount (used by default)
+  }
+```
+
+>`payment3dsBypass` - 3DS bypass support. Supported types:
+```swift
+  public enum Payment3dsBypassType: String, Codable {
+      case supported
+      case always
+      case never
+  }
 ```
 >`proposedAmounts` - array of already predefined amount values, `nil` by default
 `description` - text will be displayed to user on the payment screen. Please, provide a readable product description.
@@ -153,6 +190,37 @@ The UI example with free to change amount, `proposedAmounts`,product description
 The UI example with free to change amount, `proposedAmounts`,product description and `tokenCards`:
 
 <img src="images/anyAmount_prefiled_tokenized_card.png" width="300"/>
+
+- In case verify payment cards using your own payment page you need to create the next object:
+```swift
+let paymentType = LookupPaymentType(orderId: UUID().uuidString,
+                                    description: "Test product",
+                                    method: .purchase,
+                                    payment3dsBypass: .supported)
+
+```
+>`method` - payment method. Supported types:
+``` swift
+  public enum LookupMethodType: String, Codable {
+    case lookup
+  }
+```
+
+>`payment3dsBypass` - 3DS bypass support. Supported types:
+```swift
+  public enum Payment3dsBypassType: String, Codable {
+      case supported
+      case always
+      case never
+  }
+```
+`description` - text will be displayed to user on the payment screen. Please, provide a readable product description.
+
+The UI example with product description:
+
+<img src="images/lookup.png" width="300"/>
+<br>
+
 
 b) Create `KeyConfig` object:
 ```swift
@@ -183,28 +251,10 @@ let customerData = CustomerData(customerEmail: "customerEmail", // required
 
 d) Create `AdditionalData` object that contains all additional information. 
 ```swift 
-let additionalData = AdditionalData(method: .purchase, 
-                                    payment3dsBypass: .supported,
-                                    serverUrl: nil,
+let additionalData = AdditionalData(serverUrl: nil,
                                     products: nil,
                                     merchantMcc: nil,
                                     payload: nil)
-```
->`method` - payment method according with your business. Supported types:
-``` swift
-  public enum PaymentMethodType: String, Codable {
-      case auth // two-step payment. Amount is simply hold on payer's card. For actual charging, complete the transaction with capture method.
-      case purchase // one-step payment. Charges customer's card for specified amount (used by default)
-  }
-```
-
->`payment3dsBypass` - 3DS bypass support. Supported types:
-```swift
-  public enum Payment3dsBypassType: String, Codable {
-      case supported
-      case always
-      case never
-  }
 ```
 `serverUrl` - callback url on your server \
 `products` - array of products that are being paid for. All supported fields you find on our help centre \

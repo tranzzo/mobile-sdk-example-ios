@@ -1,0 +1,1855 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TranzzoPaymentSDK
+import AVFoundation
+import AnyFormatKit
+import DeveloperToolsSupport
+import Foundation
+import PassKit
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public func reload<C>(using stagedChangeset: TranzzoPaymentSDK.StagedChangeset<C>, interrupt: ((TranzzoPaymentSDK.Changeset<C>) -> Swift.Bool)? = nil, setData: (C) -> Swift.Void) where C : Swift.Collection
+}
+public enum PaymentStatus : Swift.String, Swift.Codable {
+  case pending
+  case failure
+  case success
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PaymentInfoResponse : Swift.Codable {
+  public let paymentID: Swift.String?
+  public let orderID: Swift.String?
+  public let gatewayOrderID: Swift.String?
+  public let billingOrderID: Swift.String?
+  public let transactionID: Swift.String?
+  public let posID: Swift.String?
+  public let mode: Swift.String?
+  public let method: Swift.String?
+  public let amount: Foundation.Decimal?
+  public let currency: Swift.String?
+  public let description: Swift.String?
+  public let status: TranzzoPaymentSDK.PaymentStatus
+  public let statusCode: Swift.String?
+  public let statusDescription: Swift.String?
+  public let userActionRequired: Swift.Bool?
+  public let userActionURL: Swift.String?
+  public let eci: Swift.String?
+  public let mcc: Swift.String?
+  public let options3Ds: Swift.String?
+  public let ccMask: Swift.String?
+  public let ccToken: Swift.String?
+  public let ccTokenExpiration: Swift.String?
+  public let customerID: Swift.String?
+  public let customerIP: Swift.String?
+  public let customerFname: Swift.String?
+  public let customerLname: Swift.String?
+  public let customerEmail: Swift.String?
+  public let customerPhone: Swift.String?
+  public let customerCountry: Swift.String?
+  public let resultURL: Swift.String?
+  public let createdAt: Swift.String?
+  public let processingTime: Swift.String?
+  public let payload: Swift.String?
+  public let bankShortName: Swift.String?
+  public let customerUserAgent: Swift.String?
+  public let customerCity: Swift.String?
+  public let rrn: Swift.String?
+  public let authCode: Swift.String?
+  public let dcc: Swift.String?
+  public let otpURL: Swift.String?
+  public let makePaymentDescription: Swift.String?
+  public let customerBirthday: Swift.String?
+  public let payway: Swift.String?
+  public let customerPatronym: Swift.String?
+  public let terminalName: Swift.String?
+  public let recipientCcToken: Swift.String?
+  public let recipientCcMask: Swift.String?
+  public let dccRates: Swift.String?
+  public let trafficSource: TranzzoPaymentSDK.PaymentInfoResponse.TrafficSource?
+  public let gateway: Swift.String?
+  public let paymentSystem: Swift.String?
+  public let entityId: Swift.String?
+  public let externalTerminalName: Swift.String?
+  public let recipientEmail: Swift.String?
+  public let recipientPhone: Swift.String?
+  public let recipientFname: Swift.String?
+  public let recipientLname: Swift.String?
+  public let recipientPatronym: Swift.String?
+  public let merchantOrderId: Swift.String?
+  public let receiptUrl: Swift.String?
+  public let processedAmount: Foundation.Decimal?
+  public let processedCurrency: Swift.String?
+  public let comment: Swift.String?
+  public let registryRefNo: Swift.String?
+  public let processedAt: Swift.String?
+  public struct TrafficSource : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol TableSectionHeaderFooterProtocol {
+  var section: TranzzoPaymentSDK.TableSection? { get }
+  func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> Swift.String
+  @discardableResult
+  func dispatch(_ event: TranzzoPaymentSDK.TableSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: Swift.Int, table: UIKit.UITableView) -> Any?
+}
+extension UIKit.UITableViewHeaderFooterView : TranzzoPaymentSDK.ReusableViewProtocol {
+  @_Concurrency.MainActor(unsafe) public static var reusableViewClass: Swift.AnyClass {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static func reusableViewSource() -> TranzzoPaymentSDK.ReusableViewLoadSource
+}
+public struct TokenCardModel {
+  public var mask: Swift.String
+  public var token: Swift.String
+  public var isDefault: Swift.Bool
+  public init(mask: Swift.String, token: Swift.String, isDefault: Swift.Bool)
+}
+public protocol CollectionCellAdapterProtocol {
+  var modelType: any Any.Type { get }
+  var modelViewType: any Any.Type { get }
+  var modelIdentifier: Swift.String { get }
+  func dequeueCell(inCollection: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @discardableResult
+  func registerReusableCellViewForDirector(_ director: TranzzoPaymentSDK.CollectionDirector) -> Swift.Bool
+  @discardableResult
+  func dispatchEvent(_ kind: TranzzoPaymentSDK.CollectionAdapterEventID, model: Any?, cell: (any TranzzoPaymentSDK.ReusableViewProtocol)?, path: Foundation.IndexPath?, params: Any?...) -> Any?
+}
+extension TranzzoPaymentSDK.CollectionCellAdapterProtocol {
+  public var modelIdentifier: Swift.String {
+    get
+  }
+}
+public struct PaymentsConfig {
+  public enum Environment {
+    case sandbox
+    case production
+    public static func == (a: TranzzoPaymentSDK.PaymentsConfig.Environment, b: TranzzoPaymentSDK.PaymentsConfig.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var environment: TranzzoPaymentSDK.PaymentsConfig.Environment
+  public var currency: Swift.String
+  public var applePay: TranzzoPaymentSDK.ApplePayConfig?
+  public var enableLogging: Swift.Bool
+  public init(environment: TranzzoPaymentSDK.PaymentsConfig.Environment, currency: Swift.String, applePay: TranzzoPaymentSDK.ApplePayConfig? = nil, enableLogging: Swift.Bool = false)
+}
+public struct ApplePayConfig {
+  public init(merchantId: Swift.String, countryCode: Swift.String)
+}
+@objc @_Concurrency.MainActor(unsafe) open class TableDirector : ObjectiveC.NSObject, UIKit.UITableViewDataSourcePrefetching {
+  @_Concurrency.MainActor(unsafe) weak public var table: UIKit.UITableView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var scrollViewEvents: TranzzoPaymentSDK.ScrollViewEventsHandler
+  @_Concurrency.MainActor(unsafe) public var sections: [TranzzoPaymentSDK.TableSection] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var firstSection: TranzzoPaymentSDK.TableSection? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var lastSection: TranzzoPaymentSDK.TableSection? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var rowHeight: TranzzoPaymentSDK.TableDirector.RowHeight {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(table: UIKit.UITableView)
+  @_Concurrency.MainActor(unsafe) public var isPrefetchingEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func registerCellAdapters(_ adapters: [any TranzzoPaymentSDK.TableCellAdapterProtocol])
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func registerCellAdapter(_ adapter: any TranzzoPaymentSDK.TableCellAdapterProtocol) -> Swift.String
+  @_Concurrency.MainActor(unsafe) public func registerHeaderFooterAdapters(_ adapters: [any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol])
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func registerHeaderFooterAdapter(_ adapter: any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol) -> Swift.String
+  @usableFromInline
+  @_Concurrency.MainActor(unsafe) internal func adapterForHeaderFooterView(_ view: UIKit.UIView) -> (any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol)?
+  @_Concurrency.MainActor(unsafe) public func set(sections: [TranzzoPaymentSDK.TableSection])
+  @_Concurrency.MainActor(unsafe) public func add(section: TranzzoPaymentSDK.TableSection, at index: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) public func add(sections newSections: [TranzzoPaymentSDK.TableSection], at index: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) public func sectionAt(_ index: Swift.Int) -> TranzzoPaymentSDK.TableSection?
+  @_Concurrency.MainActor(unsafe) public func section(_ uuid: Swift.String) -> TranzzoPaymentSDK.TableSection?
+  @_Concurrency.MainActor(unsafe) public func elementAt(_ indexPath: Foundation.IndexPath) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(indexPath: Foundation.IndexPath) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(section index: Swift.Int) -> TranzzoPaymentSDK.TableSection?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(sectionsAt indexes: Foundation.IndexSet) -> [TranzzoPaymentSDK.TableSection]
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func removeAll(keepingCapacity: Swift.Bool = false) -> [TranzzoPaymentSDK.TableSection]
+  @_Concurrency.MainActor(unsafe) public func move(swappingAt sourceIndex: Swift.Int, with destIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func move(from sourceIndex: Swift.Int, to destIndex: Swift.Int)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func add(elements: [any TranzzoPaymentSDK.ElementRepresentable], inSection sectionIdx: Swift.Int? = nil) -> TranzzoPaymentSDK.TableSection
+  @_Concurrency.MainActor(unsafe) public func reload(afterUpdate update: ((TranzzoPaymentSDK.TableDirector) -> UIKit.UITableView.RowAnimation)? = nil, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension TranzzoPaymentSDK.TableDirector : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didEndDisplayingHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didEndDisplayingFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, titleForFooterInSection section: Swift.Int) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection sectionIdx: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection sectionIdx: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForHeaderInSection index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForFooterInSection index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, canEditRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, commit editingStyle: UIKit.UITableViewCell.EditingStyle, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, editActionsForRowAt indexPath: Foundation.IndexPath) -> [UIKit.UITableViewRowAction]?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, canMoveRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, moveRowAt sourceIndexPath: Foundation.IndexPath, to destinationIndexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, indentationLevelForRowAt indexPath: Foundation.IndexPath) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, prefetchRowsAt indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cancelPrefetchingForRowsAt indexPaths: [Foundation.IndexPath])
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, shouldSpringLoadRowAt indexPath: Foundation.IndexPath, with context: any UIKit.UISpringLoadedInteractionContext) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, accessoryButtonTappedForRowWith indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willSelectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDeselectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didDeselectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willBeginEditingRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didEndEditingRowAt indexPath: Foundation.IndexPath?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, editingStyleForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell.EditingStyle
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: Foundation.IndexPath) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, shouldIndentWhileEditingRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: Foundation.IndexPath, toProposedIndexPath proposedDestinationIndexPath: Foundation.IndexPath) -> Foundation.IndexPath
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, shouldShowMenuForRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, canPerformAction action: ObjectiveC.Selector, forRowAt indexPath: Foundation.IndexPath, withSender sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, performAction action: ObjectiveC.Selector, forRowAt indexPath: Foundation.IndexPath, withSender sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, shouldHighlightRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didHighlightRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didUnhighlightRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, canFocusRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @available(iOS 11, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: Foundation.IndexPath) -> UIKit.UISwipeActionsConfiguration?
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: Foundation.IndexPath) -> UIKit.UISwipeActionsConfiguration?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func sectionIndexTitles(for tableView: UIKit.UITableView) -> [Swift.String]?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, sectionForSectionIndexTitle title: Swift.String, at index: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewShouldScrollToTop(_ scrollView: UIKit.UIScrollView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?, atScale scale: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIKit.UIScrollView)
+}
+extension TranzzoPaymentSDK.CollectionHeaderFooterAdapter {
+  public struct Event {
+    public var isHeader: Swift.Bool {
+      get
+    }
+    public var view: View? {
+      get
+    }
+    public var sectionIndex: Swift.Int {
+      get
+    }
+    public var section: TranzzoPaymentSDK.CollectionSection? {
+      get
+    }
+    public init(isHeader: Swift.Bool, view: UIKit.UIView?, section: TranzzoPaymentSDK.CollectionSection?, index: Swift.Int)
+  }
+  public struct EventsSubscriber {
+    public var dequeue: ((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.Event) -> Swift.Void)?
+    public var referenceSize: (((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.Event)) -> CoreFoundation.CGSize)?
+    public var didDisplay: (((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.Event)) -> Swift.Void)?
+    public var endDisplay: (((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.Event)) -> Swift.Void)?
+    public var willDisplay: (((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.Event)) -> Swift.Void)?
+  }
+}
+public protocol CollectionSectionHeaderFooterProtocol {
+  var section: TranzzoPaymentSDK.CollectionSection? { get }
+  @discardableResult
+  func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.CollectionDirector, type: Swift.String) -> Swift.String
+  @discardableResult
+  func dispatch(_ event: TranzzoPaymentSDK.CollectionSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: Swift.Int) -> Any?
+}
+public enum CollectionSectionEvents : Swift.Int {
+  case dequeue
+  case referenceSize
+  case didDisplay
+  case endDisplay
+  case willDisplay
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol PostRequest : TranzzoPaymentSDK.BaseRequestProtocol {
+  var bodyParameters: Foundation.Data { get set }
+}
+@objc @_Concurrency.MainActor(unsafe) open class CollectionDirector : ObjectiveC.NSObject, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSourcePrefetching {
+  @_Concurrency.MainActor(unsafe) weak public var collection: UIKit.UICollectionView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var sections: [TranzzoPaymentSDK.CollectionSection] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var firstSection: TranzzoPaymentSDK.CollectionSection? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var lastSection: TranzzoPaymentSDK.CollectionSection? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var events: TranzzoPaymentSDK.CollectionDirector.EventsSubscriber
+  @_Concurrency.MainActor(unsafe) public var scrollEvents: TranzzoPaymentSDK.ScrollViewEventsHandler
+  @_Concurrency.MainActor(unsafe) public init(_ collection: UIKit.UICollectionView)
+  @_Concurrency.MainActor(unsafe) public var isPrefetchingEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func registerAdapters(_ adapters: [any TranzzoPaymentSDK.CollectionCellAdapterProtocol])
+  @_Concurrency.MainActor(unsafe) public func registerAdapter(_ adapter: any TranzzoPaymentSDK.CollectionCellAdapterProtocol)
+  @_Concurrency.MainActor(unsafe) public func registerHeaderFooterAdapters(_ adapters: [any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol])
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func registerHeaderFooterAdapter(_ adapter: any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol) -> Swift.String
+  @_Concurrency.MainActor(unsafe) public func elementAt(_ indexPath: Foundation.IndexPath) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @_Concurrency.MainActor(unsafe) public func set(sections newSections: [TranzzoPaymentSDK.CollectionSection])
+  @_Concurrency.MainActor(unsafe) public func section(_ uuid: Swift.String) -> TranzzoPaymentSDK.CollectionSection?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func add(elements: [any TranzzoPaymentSDK.ElementRepresentable]) -> TranzzoPaymentSDK.CollectionSection
+  @_Concurrency.MainActor(unsafe) public func add(section: TranzzoPaymentSDK.CollectionSection, at index: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) public func add(sections newSections: [TranzzoPaymentSDK.CollectionSection], at index: Swift.Int? = nil)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func removeAll(keepingCapacity kp: Swift.Bool = false) -> Swift.Int
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(indexPath: Foundation.IndexPath) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(section index: Swift.Int) -> TranzzoPaymentSDK.CollectionSection?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func remove(sectionsAt indexes: Foundation.IndexSet) -> [TranzzoPaymentSDK.CollectionSection]
+  @_Concurrency.MainActor(unsafe) public func sectionAt(_ index: Swift.Int) -> TranzzoPaymentSDK.CollectionSection?
+  @_Concurrency.MainActor(unsafe) public func reload(afterUpdate update: ((TranzzoPaymentSDK.CollectionDirector) -> Swift.Void)? = nil, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension TranzzoPaymentSDK.CollectionDirector {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldSelectItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldDeselectItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didDeselectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldHighlightItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didHighlightItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didUnhighlightItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, transitionLayoutForOldLayout fromLayout: UIKit.UICollectionViewLayout, newLayout toLayout: UIKit.UICollectionViewLayout) -> UIKit.UICollectionViewTransitionLayout
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, targetIndexPathForMoveFromItemAt originalIndexPath: Foundation.IndexPath, toProposedIndexPath proposedIndexPath: Foundation.IndexPath) -> Foundation.IndexPath
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldShowMenuForItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, canPerformAction action: ObjectiveC.Selector, forItemAt indexPath: Foundation.IndexPath, withSender sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, performAction action: ObjectiveC.Selector, forItemAt indexPath: Foundation.IndexPath, withSender sender: Any?)
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldSpringLoadItemAt indexPath: Foundation.IndexPath, with context: any UIKit.UISpringLoadedInteractionContext) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, canFocusItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldUpdateFocusIn context: UIKit.UICollectionViewFocusUpdateContext) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didUpdateFocusIn context: UIKit.UICollectionViewFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplaySupplementaryView view: UIKit.UICollectionReusableView, forElementKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplayingSupplementaryView view: UIKit.UICollectionReusableView, forElementOfKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) public func headerFooterForSection(ofType type: Swift.String, at indexPath: Foundation.IndexPath) -> (any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol)?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, prefetchItemsAt indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cancelPrefetchingForItemsAt indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewShouldScrollToTop(_ scrollView: UIKit.UIScrollView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?, atScale scale: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIKit.UIScrollView)
+}
+public protocol ReusableViewProtocol : AnyObject {
+}
+extension UIKit.UITableViewCell : TranzzoPaymentSDK.ReusableViewProtocol {
+}
+extension UIKit.UICollectionReusableView : TranzzoPaymentSDK.ReusableViewProtocol {
+}
+public enum ReusableViewLoadSource {
+  case fromStoryboard
+  case fromXib(name: Swift.String?, bundle: Foundation.Bundle?)
+  case fromClass
+}
+public class WriteSafeSemaphore {
+  public init()
+  public func perform<T>(_ action: () -> T) -> T
+  @objc deinit
+}
+open class TableCellAdapter<Model, Cell> : TranzzoPaymentSDK.TableCellAdapterProtocol where Model : TranzzoPaymentSDK.ElementRepresentable, Cell : TranzzoPaymentSDK.ReusableViewProtocol {
+  public var modelType: any Any.Type
+  public var modelViewType: any Any.Type
+  public var reusableViewIdentifier: Swift.String
+  public var reusableViewLoadSource: TranzzoPaymentSDK.ReusableViewLoadSource
+  final public let events: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.EventsSubscriber
+  public init(_ configuration: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>) -> ())? = nil)
+  public func dequeueCell(inTable table: UIKit.UITableView, at indexPath: Foundation.IndexPath?) -> UIKit.UITableViewCell
+  public func registerReusableCellViewForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> Swift.Bool
+  @discardableResult
+  public func dispatchEvent(_ kind: TranzzoPaymentSDK.TableAdapterEventID, model: Any?, cell: (any TranzzoPaymentSDK.ReusableViewProtocol)?, path: Foundation.IndexPath?, params: Any?...) -> Any?
+  @objc deinit
+}
+extension TranzzoPaymentSDK.CollectionCellAdapter {
+  public struct Event {
+    public let indexPath: Foundation.IndexPath?
+    public let element: Model?
+    public var collection: UIKit.UICollectionView? {
+      get
+    }
+    public var collectionSize: CoreFoundation.CGSize? {
+      get
+    }
+    public var cell: Cell?
+  }
+  public struct EventsSubscriber {
+    public var dequeue: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var shouldSelect: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var shouldDeselect: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var didSelect: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var didDeselect: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var didHighlight: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var didUnhighlight: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var shouldHighlight: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var willDisplay: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var endDisplay: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var shouldShowEditMenu: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var canPerformEditAction: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var performEditAction: ((_ ctx: TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event, _ selector: ObjectiveC.Selector, _ sender: Any?) -> Swift.Void)?
+    public var canFocus: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var itemSize: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> CoreFoundation.CGSize)?
+    public var prefetch: ((_ items: [Model], _ paths: [Foundation.IndexPath]) -> Swift.Void)?
+    public var cancelPrefetch: ((_ items: [Model], _ paths: [Foundation.IndexPath]) -> Swift.Void)?
+    public var shouldSpringLoad: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+  }
+}
+public enum CollectionAdapterEventID : Swift.Int {
+  case dequeue
+  case shouldSelect
+  case shouldDeselect
+  case didSelect
+  case didDeselect
+  case didHighlight
+  case didUnhighlight
+  case shouldHighlight
+  case willDisplay
+  case endDisplay
+  case shouldShowEditMenu
+  case canPerformEditAction
+  case performEditAction
+  case canFocus
+  case itemSize
+  case prefetch
+  case cancelPrefetch
+  case shouldSpringLoad
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct AdditionalData {
+  public let serverUrl: Swift.String?
+  public let products: [TranzzoPaymentSDK.Product]?
+  public let merchantMcc: Swift.String?
+  public let payload: [Swift.String : Swift.String]?
+  public init(serverUrl: Swift.String?, products: [TranzzoPaymentSDK.Product]?, merchantMcc: Swift.String?, payload: [Swift.String : Swift.String]?)
+}
+public struct KeyConfig {
+  public let sessionToken: Swift.String
+  public let apiKey: Swift.String
+  public let posId: Swift.String
+  public init(sessionToken: Swift.String, apiKey: Swift.String, posId: Swift.String)
+}
+public enum TableAdapterCellAction {
+  case none
+  case deselect
+  case deselectAnimated
+  public static func == (a: TranzzoPaymentSDK.TableAdapterCellAction, b: TranzzoPaymentSDK.TableAdapterCellAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension TranzzoPaymentSDK.TableCellAdapter {
+  @_hasMissingDesignatedInitializers public class Event {
+    public var table: UIKit.UITableView? {
+      get
+    }
+    public var tableSize: CoreFoundation.CGSize? {
+      get
+    }
+    final public let indexPath: Foundation.IndexPath?
+    final public let element: Model?
+    public var cell: Cell?
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers public class EventsSubscriber {
+    public var dequeue: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> ())?
+    public var willDisplay: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var rowHeight: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> CoreFoundation.CGFloat)?
+    public var rowHeightEstimated: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> CoreFoundation.CGFloat)?
+    public var canEditRow: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var commitEdit: ((_ ctx: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event, _ commit: UIKit.UITableViewCell.EditingStyle) -> Swift.Void)?
+    public var editActions: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> [UIKit.UITableViewRowAction]?)?
+    public var canMoveRow: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var moveRow: ((_ ctx: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event, _ dest: Foundation.IndexPath) -> Swift.Void)?
+    public var indentLevel: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Int)?
+    public var prefetch: ((_ items: [Model], _ paths: [Foundation.IndexPath]) -> Swift.Void)?
+    public var cancelPrefetch: ((_ models: [Model], _ paths: [Foundation.IndexPath]) -> Swift.Void)?
+    public var shouldSpringLoad: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var tapOnAccessory: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var willSelect: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Foundation.IndexPath?)?
+    public var didSelect: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> TranzzoPaymentSDK.TableAdapterCellAction)?
+    public var willDeselect: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Foundation.IndexPath?)?
+    public var didDeselect: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Foundation.IndexPath?)?
+    public var willBeginEdit: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var didEndEdit: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var editStyle: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> UIKit.UITableViewCell.EditingStyle)?
+    public var deleteConfirmTitle: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.String?)?
+    public var editShouldIndent: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var moveAdjustDestination: ((_ ctx: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event, _ proposed: Foundation.IndexPath) -> Foundation.IndexPath?)?
+    public var endDisplay: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var shouldShowMenu: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var canPerformMenuAction: ((_ ctx: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event, _ sel: ObjectiveC.Selector, _ sender: Any?) -> Swift.Bool)?
+    public var performMenuAction: ((_ ctx: TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event, _ sel: ObjectiveC.Selector, _ sender: Any?) -> Swift.Void)?
+    public var shouldHighlight: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var didHighlight: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var didUnhighlight: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Void)?
+    public var canFocus: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> Swift.Bool)?
+    public var leadingSwipeActions: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> UIKit.UISwipeActionsConfiguration?)? {
+      get
+      set
+    }
+    public var trailingSwipeActions: ((TranzzoPaymentSDK.TableCellAdapter<Model, Cell>.Event) -> UIKit.UISwipeActionsConfiguration?)? {
+      get
+      set
+    }
+    @objc deinit
+  }
+}
+public enum TableAdapterEventID : Swift.Int {
+  case dequeue
+  case canEditRow
+  case commitEdit
+  case canMoveRow
+  case moveRow
+  case prefetch
+  case cancelPrefetch
+  case rowHeight
+  case rowHeightEstimated
+  case indentLevel
+  case willDisplay
+  case shouldSpringLoad
+  case editActions
+  case tapOnAccessory
+  case willSelect
+  case tap
+  case willDeselect
+  case didDeselect
+  case willBeginEdit
+  case didEndEdit
+  case editStyle
+  case deleteConfirmTitle
+  case editShouldIndent
+  case moveAdjustDestination
+  case endDisplay
+  case shouldShowMenu
+  case canPerformMenuAction
+  case performMenuAction
+  case shouldHighlight
+  case didHighlight
+  case didUnhighlight
+  case canFocus
+  case leadingSwipeActions
+  case trailingSwipeActions
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension TranzzoPaymentSDK.CollectionDirector {
+  public enum ItemSize {
+    case `default`
+    case auto(estimated: CoreFoundation.CGSize)
+    case explicit(CoreFoundation.CGSize)
+  }
+  public struct EventsSubscriber {
+  }
+}
+public struct ScrollViewEventsHandler {
+  public var didScroll: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var endScrollingAnimation: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var shouldScrollToTop: ((UIKit.UIScrollView) -> Swift.Bool)?
+  public var didScrollToTop: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var willBeginDragging: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var willEndDragging: ((_ scrollView: UIKit.UIScrollView, _ velocity: CoreFoundation.CGPoint, _ targetOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>) -> Swift.Void)?
+  public var endDragging: ((_ scrollView: UIKit.UIScrollView, _ willDecelerate: Swift.Bool) -> Swift.Void)?
+  public var willBeginDecelerating: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var endDecelerating: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var viewForZooming: ((UIKit.UIScrollView) -> UIKit.UIView?)?
+  public var willBeginZooming: ((_ scrollView: UIKit.UIScrollView, _ view: UIKit.UIView?) -> Swift.Void)?
+  public var endZooming: ((_ scrollView: UIKit.UIScrollView, _ view: UIKit.UIView?, _ scale: CoreFoundation.CGFloat) -> Swift.Void)?
+  public var didZoom: ((UIKit.UIScrollView) -> Swift.Void)?
+  public var didChangeAdjustedContentInset: ((UIKit.UIScrollView) -> Swift.Void)?
+}
+public protocol PaymentMethod {
+}
+public enum PaymentMethodType : Swift.String, Swift.Codable, TranzzoPaymentSDK.PaymentMethod {
+  case auth
+  case purchase
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LookupMethodType : Swift.String, Swift.Codable, TranzzoPaymentSDK.PaymentMethod {
+  case lookup
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Payment3dsBypassType : Swift.String, Swift.Codable, TranzzoPaymentSDK.PaymentMethod {
+  case supported
+  case always
+  case never
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol PaymentType {
+}
+public struct FixedAmountPaymentType : TranzzoPaymentSDK.PaymentType {
+  public var orderId: Swift.String
+  public var amount: Swift.Double
+  public var description: Swift.String
+  public var tokenCards: [TranzzoPaymentSDK.TokenCardModel]?
+  public let method: TranzzoPaymentSDK.PaymentMethodType
+  public let payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType
+  public init(orderId: Swift.String, amount: Swift.Double, description: Swift.String, tokenCards: [TranzzoPaymentSDK.TokenCardModel]? = nil, method: TranzzoPaymentSDK.PaymentMethodType? = nil, payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType? = nil)
+}
+public struct AnyAmountPaymentType : TranzzoPaymentSDK.PaymentType {
+  public var orderId: Swift.String
+  public var description: Swift.String
+  public var proposedAmounts: [Swift.Double]?
+  public var tokenCards: [TranzzoPaymentSDK.TokenCardModel]?
+  public let method: TranzzoPaymentSDK.PaymentMethodType
+  public let payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType
+  public init(orderId: Swift.String, description: Swift.String, proposedAmounts: [Swift.Double]? = nil, tokenCards: [TranzzoPaymentSDK.TokenCardModel]? = nil, method: TranzzoPaymentSDK.PaymentMethodType? = nil, payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType? = nil)
+}
+public struct LookupPaymentType : TranzzoPaymentSDK.PaymentType {
+  public var orderId: Swift.String
+  public var description: Swift.String
+  public var amount: Swift.Double
+  public let method: TranzzoPaymentSDK.LookupMethodType
+  public let payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType
+  public init(orderId: Swift.String, description: Swift.String, amount: Swift.Double? = nil, method: TranzzoPaymentSDK.LookupMethodType? = nil, payment3dsBypass: TranzzoPaymentSDK.Payment3dsBypassType? = nil)
+}
+public protocol TranzzoPaymentDelegate : AnyObject {
+  func paymentSuccess(_ results: TranzzoPaymentSDK.PaymentInfoResponse)
+  func paymentFailed(_ error: TranzzoPaymentSDK.TranzzoError)
+  func paymentCanceled()
+}
+@_hasMissingDesignatedInitializers public class TranzzoPaymentSDK {
+  public static func setConfig(paymentConfig: TranzzoPaymentSDK.PaymentsConfig, uiConfig: TranzzoPaymentSDK.PaymentContollerConfig? = nil)
+  public static func makePayment(rootController: UIKit.UIViewController, delegate: any TranzzoPaymentSDK.TranzzoPaymentDelegate, paymentData: TranzzoPaymentSDK.PaymentData)
+  @objc deinit
+}
+public protocol NetworkingManagerProtocol {
+  func sendRequest(request: any TranzzoPaymentSDK.BaseRequestProtocol, completionBlock: @escaping (_ response: TranzzoPaymentSDK.BaseResponse) -> ())
+}
+public struct PaymentData {
+  public var type: any TranzzoPaymentSDK.PaymentType
+  public var keyConfig: TranzzoPaymentSDK.KeyConfig
+  public var customerData: TranzzoPaymentSDK.CustomerData
+  public var additionalData: TranzzoPaymentSDK.AdditionalData?
+  public init(type: any TranzzoPaymentSDK.PaymentType, keyConfig: TranzzoPaymentSDK.KeyConfig, customerData: TranzzoPaymentSDK.CustomerData, additionalData: TranzzoPaymentSDK.AdditionalData? = nil)
+}
+public protocol CollectionHeaderFooterAdapterProtocol {
+  var modelCellType: any Any.Type { get }
+  func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.CollectionDirector, kind: Swift.String) -> Swift.String
+  func dequeueHeaderFooterForDirector(_ director: TranzzoPaymentSDK.CollectionDirector, type: Swift.String, indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView?
+  @discardableResult
+  func dispatch(_ event: TranzzoPaymentSDK.CollectionSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: TranzzoPaymentSDK.CollectionSection?, index: Swift.Int) -> Any?
+}
+extension TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol {
+  public var modelCellIdentifier: Swift.String {
+    get
+  }
+}
+open class CollectionHeaderFooterAdapter<View> : TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol where View : UIKit.UICollectionReusableView {
+  public var modelCellType: any Any.Type
+  public var reusableViewIdentifier: Swift.String
+  public var reusableViewLoadSource: TranzzoPaymentSDK.ReusableViewLoadSource
+  public var events: TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>.EventsSubscriber
+  public init(_ configuration: ((TranzzoPaymentSDK.CollectionHeaderFooterAdapter<View>) -> ())? = nil)
+  public func dequeueHeaderFooterForDirector(_ director: TranzzoPaymentSDK.CollectionDirector, type: Swift.String, indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView?
+  public func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.CollectionDirector, kind: Swift.String) -> Swift.String
+  public func dispatch(_ event: TranzzoPaymentSDK.CollectionSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: TranzzoPaymentSDK.CollectionSection?, index: Swift.Int) -> Any?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ConstraintWithKeyboardObserver : UIKit.NSLayoutConstraint {
+  @_Concurrency.MainActor(unsafe) public var additionalIndent: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+}
+extension TranzzoPaymentSDK.StagedChangeset where Collection : Swift.RangeReplaceableCollection, Collection.Element : TranzzoPaymentSDK.DifferentiableSection {
+  @inlinable public init(source: Collection, target: Collection) {
+		typealias Section = Collection.Element
+		typealias SectionIdentifier = String
+		typealias Element = ElementRepresentable
+		typealias ElementIdentifier = String
+
+		let sourceSections = ContiguousArray(source)
+		let targetSections = ContiguousArray(target)
+		
+		let contiguousSourceSections = ContiguousArray(sourceSections.map { ContiguousArray($0.elements) })
+		let contiguousTargetSections = ContiguousArray(targetSections.map { ContiguousArray($0.elements) })
+		
+		var firstStageSections = sourceSections
+		var secondStageSections = ContiguousArray<Section>()
+		var thirdStageSections = ContiguousArray<Section>()
+		var fourthStageSections = ContiguousArray<Section>()
+		
+		var sourceElementTraces = contiguousSourceSections.map { section in
+			ContiguousArray(repeating: Trace<ElementPath>(), count: section.count)
+		}
+		var targetElementReferences = contiguousTargetSections.map { section in
+			ContiguousArray<ElementPath?>(repeating: nil, count: section.count)
+		}
+		
+		let flattenSourceCount = contiguousSourceSections.reduce(into: 0) { $0 += $1.count }
+		var flattenSourceIdentifiers = ContiguousArray<ElementIdentifier>()
+		var flattenSourceElementPaths = ContiguousArray<ElementPath>()
+		
+		thirdStageSections.reserveCapacity(contiguousTargetSections.count)
+		fourthStageSections.reserveCapacity(contiguousTargetSections.count)
+		
+		flattenSourceIdentifiers.reserveCapacity(flattenSourceCount)
+		flattenSourceElementPaths.reserveCapacity(flattenSourceCount)
+		
+		// Calculate the section differences.
+		
+		let sectionResult = differentiate(source: sourceSections,
+										  target: targetSections,
+										  trackTargetIndexAsUpdated: true,
+										  mapIndex: { $0 })
+		
+		// Calculate the element differences.
+		
+		var elementDeleted = [ElementPath]()
+		var elementInserted = [ElementPath]()
+		var elementUpdated = [ElementPath]()
+		var elementMoved = [(source: ElementPath, target: ElementPath)]()
+		
+		for sourceSectionIndex in contiguousSourceSections.indices {
+			for sourceElementIndex in contiguousSourceSections[sourceSectionIndex].indices {
+				let sourceElementPath = ElementPath(element: sourceElementIndex, section: sourceSectionIndex)
+				let sourceElement = contiguousSourceSections[sourceElementPath]
+				flattenSourceIdentifiers.append(sourceElement.differenceIdentifier)
+				flattenSourceElementPaths.append(sourceElementPath)
+			}
+		}
+
+		flattenSourceIdentifiers.withUnsafeBufferPointer { bufferPointer in
+			// The pointer and the table key are for optimization.
+			var sourceOccurrencesTable = [TableKey<ElementIdentifier>: Occurrence](minimumCapacity: flattenSourceCount * 2)
+			
+			// Record the index where the element was found in flatten source collection into occurrences table.
+			for flattenSourceIndex in flattenSourceIdentifiers.indices {
+				let pointer = bufferPointer.baseAddress!.advanced(by: flattenSourceIndex)
+				let key = TableKey(pointer: pointer)
+				
+				switch sourceOccurrencesTable[key] {
+				case .none:
+					sourceOccurrencesTable[key] = .unique(index: flattenSourceIndex)
+					
+				case .unique(let otherIndex)?:
+					let reference = IndicesReference([otherIndex, flattenSourceIndex])
+					sourceOccurrencesTable[key] = .duplicate(reference: reference)
+					
+				case .duplicate(let reference)?:
+					reference.push(flattenSourceIndex)
+				}
+			}
+			
+			// Record the target index and the source index that the element having the same identifier.
+			for targetSectionIndex in contiguousTargetSections.indices {
+				let targetElements = contiguousTargetSections[targetSectionIndex]
+				
+				for targetElementIndex in targetElements.indices {
+					var targetIdentifier = targetElements[targetElementIndex].differenceIdentifier
+					let key = TableKey(pointer: &targetIdentifier)
+					
+					switch sourceOccurrencesTable[key] {
+					case .none:
+						break
+						
+					case .unique(let flattenSourceIndex)?:
+						let sourceElementPath = flattenSourceElementPaths[flattenSourceIndex]
+						let targetElementPath = ElementPath(element: targetElementIndex, section: targetSectionIndex)
+						
+						if case .none = sourceElementTraces[sourceElementPath].reference {
+							targetElementReferences[targetElementPath] = sourceElementPath
+							sourceElementTraces[sourceElementPath].reference = targetElementPath
+						}
+						
+					case .duplicate(let reference)?:
+						if let flattenSourceIndex = reference.next() {
+							let sourceElementPath = flattenSourceElementPaths[flattenSourceIndex]
+							let targetElementPath = ElementPath(element: targetElementIndex, section: targetSectionIndex)
+							targetElementReferences[targetElementPath] = sourceElementPath
+							sourceElementTraces[sourceElementPath].reference = targetElementPath
+						}
+					}
+				}
+			}
+		}
+		
+		// Record the element deletions.
+		for sourceSectionIndex in contiguousSourceSections.indices {
+			let sourceSection = sourceSections[sourceSectionIndex]
+			let sourceElements = contiguousSourceSections[sourceSectionIndex]
+			var firstStageElements = sourceElements
+			
+			// Should not calculate the element deletions in the deleted section.
+			if case .some = sectionResult.metadata.sourceTraces[sourceSectionIndex].reference {
+				var offsetByDelete = 0
+				
+				var secondStageElements = ContiguousArray<Element>()
+				
+				for sourceElementIndex in sourceElements.indices {
+					let sourceElementPath = ElementPath(element: sourceElementIndex, section: sourceSectionIndex)
+					
+					sourceElementTraces[sourceElementPath].deleteOffset = offsetByDelete
+					
+					// If the element target section is recorded as insertion, record its element path as deletion.
+					if let targetElementPath = sourceElementTraces[sourceElementPath].reference,
+						case .some = sectionResult.metadata.targetReferences[targetElementPath.section] {
+						let targetElement = contiguousTargetSections[targetElementPath]
+						firstStageElements[sourceElementIndex] = targetElement
+						secondStageElements.append(targetElement)
+						continue
+					}
+					
+					elementDeleted.append(sourceElementPath)
+					sourceElementTraces[sourceElementPath].isTracked = true
+					offsetByDelete += 1
+				}
+				
+				let secondStageSection = Section(source: sourceSection, elements: secondStageElements)
+				secondStageSections.append(secondStageSection)
+				
+			}
+			
+			let firstStageSection = Section(source: sourceSection, elements: firstStageElements)
+			firstStageSections[sourceSectionIndex] = firstStageSection
+		}
+		
+		// Record the element updates/moves/insertions.
+		for targetSectionIndex in contiguousTargetSections.indices {
+			// Should not calculate the element updates/moves/insertions in the inserted section.
+			guard let sourceSectionIndex = sectionResult.metadata.targetReferences[targetSectionIndex] else {
+				thirdStageSections.append(targetSections[targetSectionIndex])
+				fourthStageSections.append(targetSections[targetSectionIndex])
+				continue
+			}
+			
+			var untrackedSourceIndex: Int? = 0
+			let targetElements = contiguousTargetSections[targetSectionIndex]
+			
+			let sectionDeleteOffset = sectionResult.metadata.sourceTraces[sourceSectionIndex].deleteOffset
+			
+			let thirdStageSection = secondStageSections[sourceSectionIndex - sectionDeleteOffset]
+			thirdStageSections.append(thirdStageSection)
+			
+			var fourthStageElements = ContiguousArray<Element>()
+			fourthStageElements.reserveCapacity(targetElements.count)
+			
+			for targetElementIndex in targetElements.indices {
+				untrackedSourceIndex = untrackedSourceIndex.flatMap { index in
+					sourceElementTraces[sourceSectionIndex].suffix(from: index).firstIndex { !$0.isTracked }
+				}
+				
+				let targetElementPath = ElementPath(element: targetElementIndex, section: targetSectionIndex)
+				let targetElement = contiguousTargetSections[targetElementPath]
+				
+				// If the element source section is recorded as deletion, record its element path as insertion.
+				guard let sourceElementPath = targetElementReferences[targetElementPath],
+					let movedSourceSectionIndex = sectionResult.metadata.sourceTraces[sourceElementPath.section].reference else {
+						fourthStageElements.append(targetElement)
+						elementInserted.append(targetElementPath)
+						continue
+				}
+				
+				sourceElementTraces[sourceElementPath].isTracked = true
+				
+				let sourceElement = contiguousSourceSections[sourceElementPath]
+				fourthStageElements.append(targetElement)
+				
+				if !targetElement.isContentEqual(to: sourceElement) {
+					elementUpdated.append(sourceElementPath)
+				}
+				
+				if sourceElementPath.section != sourceSectionIndex || sourceElementPath.element != untrackedSourceIndex {
+					let deleteOffset = sourceElementTraces[sourceElementPath].deleteOffset
+					let moveSourceElementPath = ElementPath(element: sourceElementPath.element - deleteOffset, section: movedSourceSectionIndex)
+					elementMoved.append((source: moveSourceElementPath, target: targetElementPath))
+				}
+			}
+			
+			let fourthStageSection = Section(source: thirdStageSection, elements: fourthStageElements)
+			fourthStageSections.append(fourthStageSection)
+		}
+		
+		var changesets = ContiguousArray<Changeset<Collection>>()
+		
+		// The 1st stage changeset.
+		// - Includes:
+		//   - element updates
+		if !elementUpdated.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(firstStageSections),
+					elementUpdated: elementUpdated
+				)
+			)
+		}
+		
+		// The 2nd stage changeset.
+		// - Includes:
+		//   - section deletes
+		//   - element deletes
+		if !sectionResult.deleted.isEmpty || !elementDeleted.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(secondStageSections),
+					sectionDeleted: sectionResult.deleted,
+					elementDeleted: elementDeleted
+				)
+			)
+		}
+		
+		// The 3rd stage changeset.
+		// - Includes:
+		//   - section inserts
+		//   - section moves
+		if !sectionResult.inserted.isEmpty || !sectionResult.moved.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(thirdStageSections),
+					sectionInserted: sectionResult.inserted,
+					sectionMoved: sectionResult.moved
+				)
+			)
+		}
+		
+		// The 4th stage changeset.
+		// - Includes:
+		//   - element inserts
+		//   - element moves
+		if !elementInserted.isEmpty || !elementMoved.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(fourthStageSections),
+					elementInserted: elementInserted,
+					elementMoved: elementMoved
+				)
+			)
+		}
+		
+		// The 5th stage changeset.
+		// - Includes:
+		//   - section updates
+		if !sectionResult.updated.isEmpty {
+			changesets.append(
+				Changeset(
+					data: target,
+					sectionUpdated: sectionResult.updated
+				)
+			)
+		}
+		
+		// Set the target to `data` of the last stage.
+		if !changesets.isEmpty {
+			let index = changesets.index(before: changesets.endIndex)
+			changesets[index].data = target
+		}
+		
+		self.init(changesets)
+	}
+}
+public protocol BaseRequestProtocol {
+  var path: Swift.String { get }
+  var urlParameters: [Swift.String : Any] { get }
+  var requestUrl: Swift.String? { get }
+}
+public protocol GetRequest : TranzzoPaymentSDK.BaseRequestProtocol {
+}
+public enum ProductPriceType : Swift.String, Swift.Codable {
+  case vat
+  case net
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ProductUnitType : Swift.String, Swift.Codable {
+  case kg
+  case m
+  case pc
+  case l
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ProductTaxeType : Swift.String, Swift.Codable {
+  case vat
+  case nonVat
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Product : Swift.Codable {
+  public let id: Swift.String?
+  public let url: Swift.String?
+  public let category: Swift.String?
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public let amount: Foundation.Decimal?
+  public let currency: Swift.String?
+  public let priceType: TranzzoPaymentSDK.ProductPriceType?
+  public let vat: Foundation.Decimal?
+  public let qty: Foundation.Decimal?
+  public let payload: Swift.String?
+  public let customerEmail: Swift.String?
+  public let unit: TranzzoPaymentSDK.ProductUnitType?
+  public let taxes: [TranzzoPaymentSDK.ProductTaxe]?
+  public init(id: Swift.String?, url: Swift.String?, category: Swift.String?, name: Swift.String?, description: Swift.String?, amount: Foundation.Decimal?, currency: Swift.String?, priceType: TranzzoPaymentSDK.ProductPriceType?, vat: Foundation.Decimal?, qty: Foundation.Decimal?, payload: Swift.String?, customerEmail: Swift.String?, unit: TranzzoPaymentSDK.ProductUnitType?, taxes: [TranzzoPaymentSDK.ProductTaxe]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProductTaxe : Swift.Codable {
+  public let type: TranzzoPaymentSDK.ProductTaxeType
+  public let prc: Foundation.Decimal
+  public init(type: TranzzoPaymentSDK.ProductTaxeType, prc: Foundation.Decimal)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+open class TableSection : Swift.Equatable, TranzzoPaymentSDK.DifferentiableSection {
+  public var index: Swift.Int? {
+    get
+  }
+  final public let identifier: Swift.String
+  public var headerTitle: Swift.String?
+  public var footerTitle: Swift.String?
+  public var headerView: (any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol)?
+  public var footerView: (any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol)?
+  public var isCollapsed: Swift.Bool
+  public var indexTitle: Swift.String?
+  public var elements: [any TranzzoPaymentSDK.ElementRepresentable] {
+    get
+    set
+  }
+  public func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+  public var differenceIdentifier: Swift.String {
+    get
+  }
+  public static func == (lhs: TranzzoPaymentSDK.TableSection, rhs: TranzzoPaymentSDK.TableSection) -> Swift.Bool
+  required public init(original: TranzzoPaymentSDK.TableSection)
+  required public init<C>(source: TranzzoPaymentSDK.TableSection, elements: C) where C : Swift.Collection, C.Element == any TranzzoPaymentSDK.ElementRepresentable
+  public init(id: Swift.String? = nil, elements: [any TranzzoPaymentSDK.ElementRepresentable] = [])
+  convenience public init(id: Swift.String? = nil, elements: [any TranzzoPaymentSDK.ElementRepresentable] = [], headerView: (any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol)?, footerView: (any TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol)?)
+  convenience public init(id: Swift.String? = nil, elements: [any TranzzoPaymentSDK.ElementRepresentable] = [], header: Swift.String? = nil, footer: Swift.String? = nil)
+  public func set(elements newElements: [any TranzzoPaymentSDK.ElementRepresentable])
+  @discardableResult
+  public func set(element: any TranzzoPaymentSDK.ElementRepresentable, at index: Swift.Int) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  public func add(element: (any TranzzoPaymentSDK.ElementRepresentable)?, at index: Swift.Int?)
+  public func add(elements: [any TranzzoPaymentSDK.ElementRepresentable]?, at index: Swift.Int?)
+  @discardableResult
+  public func remove(at rowIndex: Swift.Int) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @discardableResult
+  public func remove(atIndexes indexes: Foundation.IndexSet) -> [any TranzzoPaymentSDK.ElementRepresentable]
+  @discardableResult
+  public func removeAll(keepingCapacity kp: Swift.Bool = false) -> Swift.Int
+  public func move(swappingAt sourceIndex: Swift.Int, with destIndex: Swift.Int)
+  public func move(from sourceIndex: Swift.Int, to destIndex: Swift.Int)
+  @objc deinit
+}
+open class CollectionCellAdapter<Model, Cell> : TranzzoPaymentSDK.CollectionCellAdapterProtocol where Model : TranzzoPaymentSDK.ElementRepresentable, Cell : TranzzoPaymentSDK.ReusableViewProtocol {
+  public var modelType: any Any.Type
+  public var modelViewType: any Any.Type
+  public var reusableViewIdentifier: Swift.String
+  public var reusableViewLoadSource: TranzzoPaymentSDK.ReusableViewLoadSource
+  public var events: TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>.EventsSubscriber
+  public init(_ configuration: ((TranzzoPaymentSDK.CollectionCellAdapter<Model, Cell>) -> Swift.Void)? = nil)
+  public func dequeueCell(inCollection collection: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  public func registerReusableCellViewForDirector(_ director: TranzzoPaymentSDK.CollectionDirector) -> Swift.Bool
+  public func dispatchEvent(_ kind: TranzzoPaymentSDK.CollectionAdapterEventID, model: Any?, cell: (any TranzzoPaymentSDK.ReusableViewProtocol)?, path: Foundation.IndexPath?, params: Any?...) -> Any?
+  @objc deinit
+}
+public struct PaymentContollerConfig {
+  public var colorConfig: TranzzoPaymentSDK.ColorConfig
+  public var localizationConfig: TranzzoPaymentSDK.LocalizationConfig
+  public init(colorConfig: TranzzoPaymentSDK.ColorConfig, localizationConfig: TranzzoPaymentSDK.LocalizationConfig)
+}
+public struct ColorConfig {
+  public var pay_button_enable_color: UIKit.UIColor
+  public var pay_button_disabled_color: UIKit.UIColor
+  public var fixed_amount_color: UIKit.UIColor
+  public var background_color: UIKit.UIColor
+  public var section_backround_color: UIKit.UIColor
+  public var border_color: UIKit.UIColor
+  public var selected_token_card_element_border_color: UIKit.UIColor
+  public var placeholder_color: UIKit.UIColor
+  public var title_color: UIKit.UIColor
+  public var input_color: UIKit.UIColor
+  public var error_color: UIKit.UIColor
+  public init()
+}
+public struct LocalizationConfig {
+  public var main_title: Swift.String
+  public var enter_amount_title: Swift.String
+  public var enter_amount_placeholder: Swift.String
+  public var pay_via_card_title: Swift.String
+  public var pay_button_title: Swift.String
+  public var lookup_pay_button_title: Swift.String
+  public var wrong_card_data_title: Swift.String
+  public var card_number_placeholder: Swift.String
+  public var card_exp_month_placeholder: Swift.String
+  public var card_exp_year_plaecholder: Swift.String
+  public var card_cvv_placeholder: Swift.String
+  public var cancel_payment_title: Swift.String
+  public var cancel_payment_description: Swift.String
+  public var cancel_payment_confirm: Swift.String
+  public var cancel_payment_cancel: Swift.String
+  public var saved_cards_list_title: Swift.String
+  public var other_card_title: Swift.String
+  public var choose_token_cards_title: Swift.String
+  public init()
+}
+open class CollectionSection : Swift.Equatable, TranzzoPaymentSDK.DifferentiableSection {
+  public var index: Swift.Int? {
+    get
+  }
+  final public let identifier: Swift.String
+  public var elements: [any TranzzoPaymentSDK.ElementRepresentable] {
+    get
+  }
+  public var headerView: (any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol)?
+  public var headerSize: CoreFoundation.CGSize?
+  public var footerView: (any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol)?
+  public var footerSize: CoreFoundation.CGSize?
+  public static func == (lhs: TranzzoPaymentSDK.CollectionSection, rhs: TranzzoPaymentSDK.CollectionSection) -> Swift.Bool
+  public var differenceIdentifier: Swift.String {
+    get
+  }
+  public func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+  open var sectionInsets: UIKit.UIEdgeInsets?
+  open var minimumInterItemSpacing: CoreFoundation.CGFloat?
+  open var minimumLineSpacing: CoreFoundation.CGFloat?
+  required public init(original: TranzzoPaymentSDK.CollectionSection)
+  required public init<C>(source: TranzzoPaymentSDK.CollectionSection, elements: C) where C : Swift.Collection, C.Element == any TranzzoPaymentSDK.ElementRepresentable
+  public init(id: Swift.String? = nil, elements: [any TranzzoPaymentSDK.ElementRepresentable] = [])
+  convenience public init(id: Swift.String? = nil, elements: [any TranzzoPaymentSDK.ElementRepresentable] = [], header: (any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol)?, footer: (any TranzzoPaymentSDK.CollectionHeaderFooterAdapterProtocol)?)
+  public func set(elements newElements: [any TranzzoPaymentSDK.ElementRepresentable])
+  @discardableResult
+  public func set(element: any TranzzoPaymentSDK.ElementRepresentable, at index: Swift.Int) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  public func add(element: (any TranzzoPaymentSDK.ElementRepresentable)?, at index: Swift.Int?)
+  public func add(elements newElements: [any TranzzoPaymentSDK.ElementRepresentable]?, at index: Swift.Int?)
+  @discardableResult
+  public func remove(at rowIndex: Swift.Int) -> (any TranzzoPaymentSDK.ElementRepresentable)?
+  @discardableResult
+  public func remove(atIndexes indexes: Foundation.IndexSet) -> [any TranzzoPaymentSDK.ElementRepresentable]
+  @discardableResult
+  public func removeAll(keepingCapacity kp: Swift.Bool = false) -> Swift.Int
+  public func move(swappingAt sourceIndex: Swift.Int, with destIndex: Swift.Int)
+  public func move(from sourceIndex: Swift.Int, to destIndex: Swift.Int)
+  @objc deinit
+}
+extension TranzzoPaymentSDK.TableHeaderFooterAdapter {
+  public struct HeaderFooterEvent {
+    public let isHeader: Swift.Bool
+    public var view: View? {
+      get
+    }
+    public var section: Swift.Int {
+      get
+    }
+  }
+  public struct HeaderFooterEventsSubscriber {
+    public var dequeue: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> Swift.Void)?
+    public var height: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> CoreFoundation.CGFloat)?
+    public var estimatedHeight: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> CoreFoundation.CGFloat)?
+    public var willDisplay: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> Swift.Void)?
+    public var didDisplay: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> Swift.Void)?
+    public var endDisplay: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEvent) -> Swift.Void)?
+  }
+}
+public enum TableSectionEvents : Swift.Int {
+  case dequeue
+  case headerHeight
+  case footerHeight
+  case estHeaderHeight
+  case estFooterHeight
+  case endDisplay
+  case willDisplay
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct ElementPath : Swift.Hashable {
+  public var element: Swift.Int
+  public var section: Swift.Int
+  public init(element: Swift.Int, section: Swift.Int)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TranzzoPaymentSDK.ElementPath, b: TranzzoPaymentSDK.ElementPath) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ErrorType {
+  case clientError
+  case serverError
+  case frameworkError
+  public static func == (a: TranzzoPaymentSDK.ErrorType, b: TranzzoPaymentSDK.ErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct TranzzoError {
+  public let message: Swift.String
+  public let httpCode: Swift.Int?
+  public let type: TranzzoPaymentSDK.ErrorType
+}
+public protocol TableHeaderFooterAdapterProtocol {
+  var modelCellType: any Any.Type { get }
+  func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> Swift.String
+  func dequeueHeaderFooterForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> UIKit.UITableViewHeaderFooterView?
+  @discardableResult
+  func dispatch(_ event: TranzzoPaymentSDK.TableSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: Swift.Int) -> Any?
+}
+extension TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol {
+  public var modelCellIdentifier: Swift.String {
+    get
+  }
+}
+open class TableHeaderFooterAdapter<View> : TranzzoPaymentSDK.TableHeaderFooterAdapterProtocol where View : UIKit.UITableViewHeaderFooterView {
+  public var modelCellType: any Any.Type
+  public var reusableViewIdentifier: Swift.String
+  public var reusableViewLoadSource: TranzzoPaymentSDK.ReusableViewLoadSource
+  public var events: TranzzoPaymentSDK.TableHeaderFooterAdapter<View>.HeaderFooterEventsSubscriber
+  public init(_ configuration: ((TranzzoPaymentSDK.TableHeaderFooterAdapter<View>) -> ())? = nil)
+  public func registerHeaderFooterViewForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> Swift.String
+  public func dequeueHeaderFooterForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> UIKit.UITableViewHeaderFooterView?
+  @discardableResult
+  public func dispatch(_ event: TranzzoPaymentSDK.TableSectionEvents, isHeader: Swift.Bool, view: UIKit.UIView?, section: Swift.Int) -> Any?
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class FlowCollectionDirector : TranzzoPaymentSDK.CollectionDirector, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) public var itemSize: TranzzoPaymentSDK.CollectionDirector.ItemSize {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var sectionsInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var minimumInteritemSpacing: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var minimumLineSpacing: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @available(iOS 9.0, *)
+  @_Concurrency.MainActor(unsafe) public var stickyHeaders: Swift.Bool {
+    get
+    set
+  }
+  @available(iOS 9.0, *)
+  @_Concurrency.MainActor(unsafe) public var stickyFooters: Swift.Bool {
+    get
+    set
+  }
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) public var sectionInsetReference: UIKit.UICollectionViewFlowLayout.SectionInsetReference {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var layout: UIKit.UICollectionViewFlowLayout? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(collection: UIKit.UICollectionView, flowLayout: UIKit.UICollectionViewLayout? = nil)
+  @objc deinit
+}
+extension TranzzoPaymentSDK.FlowCollectionDirector {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreFoundation.CGSize
+}
+public struct CustomerData {
+  public init(customerEmail: Swift.String, customerPhone: Swift.String, customerId: Swift.String? = nil, customerFname: Swift.String? = nil, customerLname: Swift.String? = nil, customerLang: Swift.String? = nil, customerCountry: Swift.String? = nil)
+}
+public protocol TableCellAdapterProtocol {
+  var modelType: any Any.Type { get }
+  var modelViewType: any Any.Type { get }
+  var modelIdentifier: Swift.String { get }
+  func dequeueCell(inTable: UIKit.UITableView, at indexPath: Foundation.IndexPath?) -> UIKit.UITableViewCell
+  @discardableResult
+  func registerReusableCellViewForDirector(_ director: TranzzoPaymentSDK.TableDirector) -> Swift.Bool
+  @discardableResult
+  func dispatchEvent(_ kind: TranzzoPaymentSDK.TableAdapterEventID, model: Any?, cell: (any TranzzoPaymentSDK.ReusableViewProtocol)?, path: Foundation.IndexPath?, params: Any?...) -> Any?
+}
+extension TranzzoPaymentSDK.TableCellAdapterProtocol {
+  public var modelIdentifier: Swift.String {
+    get
+  }
+}
+public struct StagedChangeset<Collection> where Collection : Swift.Collection {
+  @usableFromInline
+  internal var changesets: Swift.ContiguousArray<TranzzoPaymentSDK.Changeset<Collection>>
+  public init<C>(_ changesets: C) where C : Swift.Collection, C.Element == TranzzoPaymentSDK.Changeset<Collection>
+}
+extension TranzzoPaymentSDK.StagedChangeset : Swift.RandomAccessCollection, Swift.RangeReplaceableCollection, Swift.MutableCollection {
+  public typealias Element = TranzzoPaymentSDK.Changeset<Collection>
+  @inlinable public init() {
+		self.init([])
+	}
+  @inlinable public var startIndex: Swift.Int {
+    get {
+		return changesets.startIndex
+	}
+  }
+  @inlinable public var endIndex: Swift.Int {
+    get {
+		return changesets.endIndex
+	}
+  }
+  @inlinable public func index(after i: Swift.Int) -> Swift.Int {
+		return changesets.index(after: i)
+	}
+  @inlinable public subscript(position: Swift.Int) -> TranzzoPaymentSDK.Changeset<Collection> {
+    get { return changesets[position] }
+    set { changesets[position] = newValue }
+  }
+  @inlinable public mutating func replaceSubrange<C, R>(_ subrange: R, with newElements: C) where C : Swift.Collection, R : Swift.RangeExpression, C.Element == TranzzoPaymentSDK.Changeset<Collection>, R.Bound == Swift.Int {
+		changesets.replaceSubrange(subrange, with: newElements)
+	}
+  public typealias Index = Swift.Int
+  public typealias Indices = Swift.Range<Swift.Int>
+  public typealias Iterator = Swift.IndexingIterator<TranzzoPaymentSDK.StagedChangeset<Collection>>
+  public typealias SubSequence = Swift.Slice<TranzzoPaymentSDK.StagedChangeset<Collection>>
+}
+extension TranzzoPaymentSDK.StagedChangeset : Swift.Equatable where Collection : Swift.Equatable {
+  @inlinable public static func == (lhs: TranzzoPaymentSDK.StagedChangeset<Collection>, rhs: TranzzoPaymentSDK.StagedChangeset<Collection>) -> Swift.Bool {
+		return lhs.changesets == rhs.changesets
+	}
+}
+extension TranzzoPaymentSDK.StagedChangeset : Swift.ExpressibleByArrayLiteral {
+  @inlinable public init(arrayLiteral elements: TranzzoPaymentSDK.Changeset<Collection>...) {
+		self.init(elements)
+	}
+  public typealias ArrayLiteralElement = TranzzoPaymentSDK.Changeset<Collection>
+}
+extension TranzzoPaymentSDK.StagedChangeset : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension TranzzoPaymentSDK.StagedChangeset where Collection : Swift.RangeReplaceableCollection, Collection.Element : TranzzoPaymentSDK.ElementRepresentable {
+  @inlinable public init(source: Collection, target: Collection) {
+		self.init(source: source, target: target, section: 0)
+	}
+  @inlinable public init(source: Collection, target: Collection, section: Swift.Int) {
+		let sourceElements = ContiguousArray(source)
+		let targetElements = ContiguousArray(target)
+		
+		// Returns the empty changesets if both are empty.
+		if sourceElements.isEmpty && targetElements.isEmpty {
+			self.init()
+			return
+		}
+		
+		// Returns the changesets that all deletions if source is not empty and target is empty
+		if !sourceElements.isEmpty && targetElements.isEmpty {
+			self.init([Changeset(data: target, elementDeleted: sourceElements.indices.map { ElementPath(element: $0, section: section) })])
+			return
+		}
+		
+		// Returns the changesets that all insertions if source is empty and target is not empty
+		if sourceElements.isEmpty && !targetElements.isEmpty {
+			self.init([Changeset(data: target, elementInserted: targetElements.indices.map { ElementPath(element: $0, section: section) })])
+			return
+		}
+		
+		var firstStageElements = ContiguousArray<Collection.Element>()
+		var secondStageElements = ContiguousArray<Collection.Element>()
+		
+		firstStageElements.reserveCapacity(sourceElements.count)
+		
+		let result = differentiate(
+			source: sourceElements,
+			target: targetElements,
+			trackTargetIndexAsUpdated: false,
+			mapIndex: { ElementPath(element: $0, section: section) },
+			updatedElements: { firstStageElements.append($0) },
+			undeletedElements: { secondStageElements.append($0) }
+		)
+		
+		var changesets = ContiguousArray<Changeset<Collection>>()
+
+		// The 1st stage changeset.
+		// - Includes:
+		//   - element updates
+		if !result.updated.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(firstStageElements),
+					elementUpdated: result.updated
+				)
+			)
+		}
+
+		// The 2nd stage changeset.
+		// - Includes:
+		//   - element deletes
+		if !result.deleted.isEmpty {
+			changesets.append(
+				Changeset(
+					data: Collection(secondStageElements),
+					elementDeleted: result.deleted
+				)
+			)
+		}
+
+		// The 3rd stage changeset.
+		// - Includes:
+		//   - element inserts
+		//   - element moves
+		if !result.inserted.isEmpty || !result.moved.isEmpty {
+			changesets.append(
+				Changeset(
+					data: target,
+					elementInserted: result.inserted,
+					elementMoved: result.moved
+				)
+			)
+		}
+		
+		// Set the target to `data` of the last stage.
+		if !changesets.isEmpty {
+			let index = changesets.index(before: changesets.endIndex)
+			changesets[index].data = target
+		}
+		
+		self.init(changesets)
+	}
+}
+@usableFromInline
+internal struct DifferentiateResult<Index> {
+  @usableFromInline
+  internal typealias Metadata = (sourceTraces: Swift.ContiguousArray<TranzzoPaymentSDK.Trace<Swift.Int>>, targetReferences: Swift.ContiguousArray<Swift.Int?>)
+  @usableFromInline
+  internal let deleted: [Index]
+  @usableFromInline
+  internal let inserted: [Index]
+  @usableFromInline
+  internal let updated: [Index]
+  @usableFromInline
+  internal let moved: [(source: Index, target: Index)]
+  @usableFromInline
+  internal let metadata: TranzzoPaymentSDK.DifferentiateResult<Index>.Metadata
+  @usableFromInline
+  internal init(deleted: [Index] = [], inserted: [Index] = [], updated: [Index] = [], moved: [(source: Index, target: Index)] = [], metadata: TranzzoPaymentSDK.DifferentiateResult<Index>.Metadata)
+}
+@usableFromInline
+internal struct Trace<Index> {
+  @usableFromInline
+  internal var reference: Index?
+  @usableFromInline
+  internal var deleteOffset: Swift.Int
+  @usableFromInline
+  internal var isTracked: Swift.Bool
+  @usableFromInline
+  internal init()
+}
+@usableFromInline
+internal enum Occurrence {
+  case unique(index: Swift.Int)
+  case duplicate(reference: TranzzoPaymentSDK.IndicesReference)
+}
+@usableFromInline
+final internal class IndicesReference {
+  @usableFromInline
+  final internal var indices: Swift.ContiguousArray<Swift.Int>
+  @usableFromInline
+  final internal var position: Swift.Int
+  @usableFromInline
+  internal init(_ indices: Swift.ContiguousArray<Swift.Int>)
+  @inlinable final internal func push(_ index: Swift.Int) {
+		indices.append(index)
+	}
+  @inlinable final internal func next() -> Swift.Int? {
+		guard position < indices.endIndex else {
+			return nil
+		}
+		defer { position += 1 }
+		return indices[position]
+	}
+  @objc @usableFromInline
+  deinit
+}
+@usableFromInline
+internal struct TableKey<T> : Swift.Hashable where T : Swift.Hashable {
+  @usableFromInline
+  internal let pointeeHashValue: Swift.Int
+  @usableFromInline
+  internal let pointer: Swift.UnsafePointer<T>
+  @usableFromInline
+  internal init(pointer: Swift.UnsafePointer<T>)
+  @inlinable internal static func == (lhs: TranzzoPaymentSDK.TableKey<T>, rhs: TranzzoPaymentSDK.TableKey<T>) -> Swift.Bool {
+		return lhs.pointeeHashValue == rhs.pointeeHashValue
+			&& (lhs.pointer.distance(to: rhs.pointer) == 0 || lhs.pointer.pointee == rhs.pointer.pointee)
+	}
+  @inlinable internal func hash(into hasher: inout Swift.Hasher) {
+		hasher.combine(pointer.pointee)
+	}
+  @usableFromInline
+  internal var hashValue: Swift.Int {
+    @usableFromInline
+    get
+  }
+}
+extension Swift.MutableCollection where Self.Element : Swift.MutableCollection, Self.Index == Swift.Int, Self.Element.Index == Swift.Int {
+  @inlinable internal subscript(path: TranzzoPaymentSDK.ElementPath) -> Self.Element.Element {
+    get { return self[path.section][path.element] }
+    set { self[path.section][path.element] = newValue }
+  }
+}
+@discardableResult
+@inlinable internal func differentiate<E, I>(source: Swift.ContiguousArray<E>, target: Swift.ContiguousArray<E>, trackTargetIndexAsUpdated: Swift.Bool, mapIndex: (Swift.Int) -> I, updatedElements: ((E) -> Swift.Void)? = nil, undeletedElements: ((E) -> Swift.Void)? = nil) -> TranzzoPaymentSDK.DifferentiateResult<I> where E : TranzzoPaymentSDK.Differentiable {
+
+	var deleted = [I]()
+	var inserted = [I]()
+	var updated = [I]()
+	var moved = [(source: I, target: I)]()
+	
+	var sourceTraces = ContiguousArray<Trace<Int>>()
+	var targetReferences = ContiguousArray<Int?>(repeating: nil, count: target.count)
+	var sourceIdentifiers = ContiguousArray<String>()
+
+	sourceIdentifiers.reserveCapacity(source.count)
+	sourceTraces.reserveCapacity(source.count)
+	
+	for sourceElement in source {
+		sourceTraces.append(Trace())
+		sourceIdentifiers.append(sourceElement.differenceIdentifier)
+	}
+	
+	sourceIdentifiers.withUnsafeBufferPointer { bufferPointer in
+		// The pointer and the table key are for optimization.
+		var sourceOccurrencesTable = [TableKey<String>: Occurrence](minimumCapacity: source.count * 2)
+		
+		// Record the index where the element was found in source collection into occurrences table.
+		for sourceIndex in sourceIdentifiers.indices {
+			let pointer = bufferPointer.baseAddress!.advanced(by: sourceIndex)
+			let key = TableKey(pointer: pointer)
+			
+			switch sourceOccurrencesTable[key] {
+			case .none:
+				sourceOccurrencesTable[key] = .unique(index: sourceIndex)
+				
+			case .unique(let otherIndex)?:
+				let reference = IndicesReference([otherIndex, sourceIndex])
+				sourceOccurrencesTable[key] = .duplicate(reference: reference)
+				
+			case .duplicate(let reference)?:
+				reference.push(sourceIndex)
+			}
+		}
+		
+		// Record the target index and the source index that the element having the same identifier. And i'm the best....
+		for targetIndex in target.indices {
+			var targetIdentifier = target[targetIndex].differenceIdentifier
+			let key = TableKey(pointer: &targetIdentifier)
+			
+			switch sourceOccurrencesTable[key] {
+			case .none:
+				break
+				
+			case .unique(let sourceIndex)?:
+				if case .none = sourceTraces[sourceIndex].reference {
+					targetReferences[targetIndex] = sourceIndex
+					sourceTraces[sourceIndex].reference = targetIndex
+				}
+				
+			case .duplicate(let reference)?:
+				if let sourceIndex = reference.next() {
+					targetReferences[targetIndex] = sourceIndex
+					sourceTraces[sourceIndex].reference = targetIndex
+				}
+			}
+		}
+	}
+	
+	var offsetByDelete = 0
+	var untrackedSourceIndex: Int? = 0
+	
+	// Record the deletions. ciao sono Margutti, padrone dell'univeso e 39mo su github
+	for sourceIndex in source.indices {
+		sourceTraces[sourceIndex].deleteOffset = offsetByDelete
+		
+		if let targetIndex = sourceTraces[sourceIndex].reference {
+			let targetElement = target[targetIndex]
+			updatedElements?(targetElement)
+			undeletedElements?(targetElement)
+		}
+		else {
+			let sourceElement = source[sourceIndex]
+			deleted.append(mapIndex(sourceIndex))
+			sourceTraces[sourceIndex].isTracked = true
+			offsetByDelete += 1
+			updatedElements?(sourceElement)
+		}
+	}
+	
+	// Record the updates/moves/insertions.
+	for targetIndex in target.indices {
+		untrackedSourceIndex = untrackedSourceIndex.flatMap { index in
+			sourceTraces.suffix(from: index).firstIndex { !$0.isTracked }
+		}
+		
+		if let sourceIndex = targetReferences[targetIndex] {
+			sourceTraces[sourceIndex].isTracked = true
+			
+			let sourceElement = source[sourceIndex]
+			let targetElement = target[targetIndex]
+			
+			if !targetElement.isContentEqual(to: sourceElement) {
+				updated.append(mapIndex(trackTargetIndexAsUpdated ? targetIndex : sourceIndex))
+			}
+			
+			if sourceIndex != untrackedSourceIndex {
+				let deleteOffset = sourceTraces[sourceIndex].deleteOffset
+				moved.append((source: mapIndex(sourceIndex - deleteOffset), target: mapIndex(targetIndex)))
+			}
+		}
+		else {
+			inserted.append(mapIndex(targetIndex))
+		}
+	}
+	
+	return DifferentiateResult(
+		deleted: deleted,
+		inserted: inserted,
+		updated: updated,
+		moved: moved,
+		metadata: (sourceTraces: sourceTraces, targetReferences: targetReferences)
+	)
+
+}
+public struct Changeset<Collection> where Collection : Swift.Collection {
+  public var data: Collection
+  public var sectionDeleted: [Swift.Int]
+  public var sectionInserted: [Swift.Int]
+  public var sectionUpdated: [Swift.Int]
+  public var sectionMoved: [(source: Swift.Int, target: Swift.Int)]
+  public var elementDeleted: [TranzzoPaymentSDK.ElementPath]
+  public var elementInserted: [TranzzoPaymentSDK.ElementPath]
+  public var elementUpdated: [TranzzoPaymentSDK.ElementPath]
+  public var elementMoved: [(source: TranzzoPaymentSDK.ElementPath, target: TranzzoPaymentSDK.ElementPath)]
+  public init(data: Collection, sectionDeleted: [Swift.Int] = [], sectionInserted: [Swift.Int] = [], sectionUpdated: [Swift.Int] = [], sectionMoved: [(source: Swift.Int, target: Swift.Int)] = [], elementDeleted: [TranzzoPaymentSDK.ElementPath] = [], elementInserted: [TranzzoPaymentSDK.ElementPath] = [], elementUpdated: [TranzzoPaymentSDK.ElementPath] = [], elementMoved: [(source: TranzzoPaymentSDK.ElementPath, target: TranzzoPaymentSDK.ElementPath)] = [])
+  @inlinable public var sectionChangeCount: Swift.Int {
+    get {
+		return sectionDeleted.count
+			+ sectionInserted.count
+			+ sectionUpdated.count
+			+ sectionMoved.count
+	}
+  }
+  @inlinable public var elementChangeCount: Swift.Int {
+    get {
+		return elementDeleted.count
+			+ elementInserted.count
+			+ elementUpdated.count
+			+ elementMoved.count
+	}
+  }
+  @inlinable public var changeCount: Swift.Int {
+    get {
+		return sectionChangeCount + elementChangeCount
+	}
+  }
+  @inlinable public var hasSectionChanges: Swift.Bool {
+    get {
+		return sectionChangeCount > 0
+	}
+  }
+  @inlinable public var hasElementChanges: Swift.Bool {
+    get {
+		return elementChangeCount > 0
+	}
+  }
+  @inlinable public var hasChanges: Swift.Bool {
+    get {
+		return changeCount > 0
+	}
+  }
+}
+extension TranzzoPaymentSDK.Changeset : Swift.Equatable where Collection : Swift.Equatable {
+  public static func == (lhs: TranzzoPaymentSDK.Changeset<Collection>, rhs: TranzzoPaymentSDK.Changeset<Collection>) -> Swift.Bool
+}
+extension TranzzoPaymentSDK.Changeset : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension TranzzoPaymentSDK.TableDirector {
+  public struct TableEventsHandler {
+  }
+  public enum RowHeight {
+    case `default`
+    case auto(estimated: CoreFoundation.CGFloat)
+    case explicit(CoreFoundation.CGFloat)
+  }
+}
+public protocol Differentiable {
+  var differenceIdentifier: Swift.String { get }
+  func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+}
+extension TranzzoPaymentSDK.Differentiable {
+  public func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+}
+public protocol ElementRepresentable : TranzzoPaymentSDK.Differentiable {
+  var modelClassIdentifier: Swift.String { get }
+}
+extension TranzzoPaymentSDK.ElementRepresentable {
+  public var modelClassIdentifier: Swift.String {
+    get
+  }
+}
+public protocol DifferentiableSection : TranzzoPaymentSDK.Differentiable {
+  var elements: [any TranzzoPaymentSDK.ElementRepresentable] { get }
+  init<C>(source: Self, elements: C) where C : Swift.Collection, C.Element == any TranzzoPaymentSDK.ElementRepresentable
+}
+extension Swift.String : TranzzoPaymentSDK.Differentiable, TranzzoPaymentSDK.ElementRepresentable {
+  public var differenceIdentifier: Swift.String {
+    get
+  }
+  public func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+}
+extension Swift.Int : TranzzoPaymentSDK.Differentiable, TranzzoPaymentSDK.ElementRepresentable {
+  public var differenceIdentifier: Swift.String {
+    get
+  }
+  public func isContentEqual(to other: any TranzzoPaymentSDK.Differentiable) -> Swift.Bool
+}
+public struct BaseResponse {
+}
+extension TranzzoPaymentSDK.PaymentStatus : Swift.Equatable {}
+extension TranzzoPaymentSDK.PaymentStatus : Swift.Hashable {}
+extension TranzzoPaymentSDK.PaymentStatus : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.PaymentsConfig.Environment : Swift.Equatable {}
+extension TranzzoPaymentSDK.PaymentsConfig.Environment : Swift.Hashable {}
+extension TranzzoPaymentSDK.CollectionSectionEvents : Swift.Equatable {}
+extension TranzzoPaymentSDK.CollectionSectionEvents : Swift.Hashable {}
+extension TranzzoPaymentSDK.CollectionSectionEvents : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.CollectionAdapterEventID : Swift.Equatable {}
+extension TranzzoPaymentSDK.CollectionAdapterEventID : Swift.Hashable {}
+extension TranzzoPaymentSDK.CollectionAdapterEventID : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.TableAdapterCellAction : Swift.Equatable {}
+extension TranzzoPaymentSDK.TableAdapterCellAction : Swift.Hashable {}
+extension TranzzoPaymentSDK.TableAdapterEventID : Swift.Equatable {}
+extension TranzzoPaymentSDK.TableAdapterEventID : Swift.Hashable {}
+extension TranzzoPaymentSDK.TableAdapterEventID : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.PaymentMethodType : Swift.Equatable {}
+extension TranzzoPaymentSDK.PaymentMethodType : Swift.Hashable {}
+extension TranzzoPaymentSDK.PaymentMethodType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.LookupMethodType : Swift.Equatable {}
+extension TranzzoPaymentSDK.LookupMethodType : Swift.Hashable {}
+extension TranzzoPaymentSDK.LookupMethodType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.Payment3dsBypassType : Swift.Equatable {}
+extension TranzzoPaymentSDK.Payment3dsBypassType : Swift.Hashable {}
+extension TranzzoPaymentSDK.Payment3dsBypassType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.ProductPriceType : Swift.Equatable {}
+extension TranzzoPaymentSDK.ProductPriceType : Swift.Hashable {}
+extension TranzzoPaymentSDK.ProductPriceType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.ProductUnitType : Swift.Equatable {}
+extension TranzzoPaymentSDK.ProductUnitType : Swift.Hashable {}
+extension TranzzoPaymentSDK.ProductUnitType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.ProductTaxeType : Swift.Equatable {}
+extension TranzzoPaymentSDK.ProductTaxeType : Swift.Hashable {}
+extension TranzzoPaymentSDK.ProductTaxeType : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.TableSectionEvents : Swift.Equatable {}
+extension TranzzoPaymentSDK.TableSectionEvents : Swift.Hashable {}
+extension TranzzoPaymentSDK.TableSectionEvents : Swift.RawRepresentable {}
+extension TranzzoPaymentSDK.ErrorType : Swift.Equatable {}
+extension TranzzoPaymentSDK.ErrorType : Swift.Hashable {}

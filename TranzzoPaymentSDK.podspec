@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name          = 'TranzzoPaymentSDK'
-  spec.version       = '1.5.18'
+  spec.version       = '1.5.19'
   spec.summary       = 'TranzzoPaymentSDK'
   spec.description   = 'Framework for Payments'
   spec.homepage      = 'https://tranzzo.ua'
@@ -12,5 +12,4 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   spec.vendored_frameworks = 'Sources/TranzzoPaymentSDK.xcframework'
   spec.source        = { :git => 'https://github.com/tranzzo/mobile-sdk-example-ios.git', :tag => "#{spec.version}" }
-  spec.dependency 'AnyFormatKit'
 end

@@ -474,6 +474,31 @@ SWIFT_CLASS("_TtC17TranzzoPaymentSDK13TableDirector")
 - (void)scrollViewDidChangeAdjustedContentInset:(UIScrollView * _Nonnull)scrollView;
 @end
 
+@class UITextField;
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK24TextFieldInputController")
+@interface TextFieldInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK29TextFieldStartInputController")
+@interface TextFieldStartInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextView;
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK23TextViewInputController")
+@interface TextViewInputController : NSObject <UITextViewDelegate>
+- (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -965,6 +990,31 @@ SWIFT_CLASS("_TtC17TranzzoPaymentSDK13TableDirector")
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
 - (void)scrollViewDidChangeAdjustedContentInset:(UIScrollView * _Nonnull)scrollView;
 @end
+
+@class UITextField;
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK24TextFieldInputController")
+@interface TextFieldInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK29TextFieldStartInputController")
+@interface TextFieldStartInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextView;
+
+SWIFT_CLASS("_TtC17TranzzoPaymentSDK23TextViewInputController")
+@interface TextViewInputController : NSObject <UITextViewDelegate>
+- (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 

@@ -385,7 +385,9 @@ open class CollectionHeaderFooterAdapter<View> : TranzzoPaymentSDK.CollectionHea
 public struct PaymentContollerConfig {
   public var colorConfig: TranzzoPaymentSDK.ColorConfig
   public var localizationConfig: TranzzoPaymentSDK.LocalizationConfig
-  public init(colorConfig: TranzzoPaymentSDK.ColorConfig, localizationConfig: TranzzoPaymentSDK.LocalizationConfig)
+  public var showApplePayForm: Swift.Bool
+  public var showCreditCardForm: Swift.Bool
+  public init(colorConfig: TranzzoPaymentSDK.ColorConfig? = nil, localizationConfig: TranzzoPaymentSDK.LocalizationConfig? = nil, showApplePayForm: Swift.Bool, showCreditCardForm: Swift.Bool)
 }
 public struct ColorConfig {
   public var pay_button_enable_color: UIKit.UIColor
@@ -1469,7 +1471,7 @@ public protocol TranzzoPaymentDelegate : AnyObject {
 }
 @_hasMissingDesignatedInitializers public class TranzzoPaymentSDK {
   public static func setConfig(paymentConfig: TranzzoPaymentSDK.PaymentsConfig, uiConfig: TranzzoPaymentSDK.PaymentContollerConfig? = nil)
-  public static func makePayment(rootController: UIKit.UIViewController, delegate: any TranzzoPaymentSDK.TranzzoPaymentDelegate, paymentData: TranzzoPaymentSDK.PaymentData)
+  public static func makePayment(rootController: UIKit.UIViewController, delegate: any TranzzoPaymentSDK.TranzzoPaymentDelegate, paymentData: TranzzoPaymentSDK.PaymentData, uiConfig: TranzzoPaymentSDK.PaymentContollerConfig? = nil)
   @objc deinit
 }
 public protocol PaymentMethod {

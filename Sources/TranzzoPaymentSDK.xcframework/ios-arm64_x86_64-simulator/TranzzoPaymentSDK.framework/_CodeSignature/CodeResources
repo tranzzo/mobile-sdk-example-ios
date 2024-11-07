@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z9AMbqbei5esRsN9ajTLUd4SP3g=
+		8gOEUipnAoo9FM/J7amupYDwRQs=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9GuEoFeBgFCfbQNgchlHsBxtBqo=
+		KIwvzRFYUSlTO4YhGM1kEe7OQBg=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9GuEoFeBgFCfbQNgchlHsBxtBqo=
+		KIwvzRFYUSlTO4YhGM1kEe7OQBg=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EYQzssutjsA3Kbq+PK34R7XkLC4=
+		tDIcC3k3bTV0d0VidOC6VSOUN7o=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z9AMbqbei5esRsN9ajTLUd4SP3g=
+		8gOEUipnAoo9FM/J7amupYDwRQs=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2yzQm6He7f86zqaMP5ecFYMNXQw=
+		ibEn5dYhA1ezD6CSIINFd1gUsTg=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2yzQm6He7f86zqaMP5ecFYMNXQw=
+		ibEn5dYhA1ezD6CSIINFd1gUsTg=
 		</data>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lHZQ3gJ3CiEtpVCIOt9cAG4YOGI=
+		WcwRbCL1YUdxnXKc4dhQ5IehSh8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -187,14 +187,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fovocAZpEoIsGLK2lK8dU2Y3oif6UUWgGmjJpdvigvQ=
+			IotulZjqvtr+pnUeLRQho6NLYrtVrHQ4liOdDrOJfhc=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NbW9//WKv95hD/QjXSBAOVeVnuHo+Ut72lA5Rocalkk=
+			UPFfrZgoTLAyMiSH2jVMEXS+oG1OvILN1OEBTe3Fs1o=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -208,28 +208,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NbW9//WKv95hD/QjXSBAOVeVnuHo+Ut72lA5Rocalkk=
+			UPFfrZgoTLAyMiSH2jVMEXS+oG1OvILN1OEBTe3Fs1o=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ANtOBexHRosW/h56not1jTYYQ3xjb4LWBXioZuUVcLg=
+			2xCFPb4N5MCXhNQQYIPM1otvytYhOEEWTNqM/rl12Wo=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fovocAZpEoIsGLK2lK8dU2Y3oif6UUWgGmjJpdvigvQ=
+			IotulZjqvtr+pnUeLRQho6NLYrtVrHQ4liOdDrOJfhc=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LqPOLMp9hyHh5ZgseIiqxwGpSp0tpIo/mUf8zwkXnzM=
+			aFpz3CZ3FrL9fbD56fdgrIlADeU9GPgLqaMmHtama1c=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -243,14 +243,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LqPOLMp9hyHh5ZgseIiqxwGpSp0tpIo/mUf8zwkXnzM=
+			aFpz3CZ3FrL9fbD56fdgrIlADeU9GPgLqaMmHtama1c=
 			</data>
 		</dict>
 		<key>Modules/TranzzoPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gNYhvlIsgY7NaWff6tjO/10ThDE4YFerVLvV9sCJ8ZQ=
+			94V3m5PhuPl+vnSG5bYgoqx5jcfznNmHys9qfUzI6K0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

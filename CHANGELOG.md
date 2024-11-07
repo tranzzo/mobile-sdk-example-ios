@@ -150,3 +150,15 @@ All notable changes to this project will be documented in this file.
   Added arm64 support
 #### Fixed 
   Fixed compilation error
+  
+
+## [1.5.19] - 25.09.2024
+#### Fixed
+  Fixed compilation errors
+
+
+## [1.6.20] - 06.11.2024
+
+#### Changed
+  Added uiConfig to makePayment method
+  Removed uiConfig from setConfig method

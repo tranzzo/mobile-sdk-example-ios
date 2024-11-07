@@ -60,7 +60,7 @@ public enum Environment {
 
 # Customization 
 
-You can easily customize the payment screen **color scheme/localization**. Just implement `PaymentContollerConfig` and pass into `setConfig` method
+You can easily customize the payment screen **color scheme/localization/showing apple pay button/ showing card form**. Just implement `PaymentContollerConfig` and pass into `makePayment` method
 
 ```swift
 var colorConfig = ColorConfig()
@@ -92,7 +92,7 @@ localizationConfig.cancel_payment_description = "cancel_payment_description"
 localizationConfig.cancel_payment_confirm = "cancel_payment_confirm"
 localizationConfig.cancel_payment_cancel = "cancel_payment_cancel"
 
-TranzzoPaymentsManager.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "your_currency", applePay: ApplePayConfig(merchantId: "yout_merchat_id", countryCode: "your_country_code")), uiConfig: PaymentContollerConfig(colorConfig: colorConfig, localizationConfig: localizationConfig))
+PaymentContollerConfig(colorConfig: colorConfig, localizationConfig: localizationConfig, showApplePayForm: true, showCreditCardForm: false)
 ```
 ### <span style="color:red">**Pay attentsion**</span>.  
 Ukrainian language is default localization
@@ -270,20 +270,26 @@ let additionalData = AdditionalData(serverUrl: nil,
 
 ```swift
 func someFunc() {
-    TranzzoPaymentSKD.makePayment(rootController: self,
+    TranzzoPaymentSDK.makePayment(rootController: self,
                                   delegate: self,
                                   paymentData: PaymentData(type: paymentType,
                                                            keyConfig: keyConfig,
                                                            customerData: customerData,
-                                                           additionalData: customerData)
-    )
+                                                           additionalData: additionalData),
+                                  uiConfig: PaymentContollerConfig(colorConfig: colorConfig,
+                                                                   localizationConfig: localizationConfig,
+                                                                   showApplePayForm: true,
+                                                                   showCreditCardForm: false)
+   )
 }
 ```
 `rootController` - UIViewController for displaying PaymentController
 
-`delegate` -     delegate
+`delegate` - delegate
 
 `paymentData` - object that contains `PaymentType`, `KeyConfig`, `CustomerData` and `AdditionalData`
+
+`uiConfig` - object that contains `PaymentContollerConfig`
 
 <br>
 

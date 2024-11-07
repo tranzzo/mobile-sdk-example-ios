@@ -83,14 +83,14 @@ class ViewController: UIViewController {
         let customerData = CustomerData(customerEmail: "test@email.com", customerPhone: "0506426008")
         
         TranzzoPaymentSDK.makePayment(rootController: self,
-                                           delegate: self,
-                                           paymentData: PaymentData(type: paymentType,
-                                                                    keyConfig: keyConfig,
-                                                                    customerData: customerData,
-                                                                    additionalData: additionalData),
+                                      delegate: self,
+                                      paymentData: PaymentData(type: paymentType,
+                                                               keyConfig: keyConfig,
+                                                               customerData: customerData,
+                                                               additionalData: additionalData),
                                       uiConfig: PaymentContollerConfig(colorConfig: colorConfig,
                                                                        localizationConfig: localizationConfig,
-                                                                       showApplePayForm: true,
+                                                                       showApplePayForm: false,
                                                                        showCreditCardForm: true)
         )
     }
@@ -137,7 +137,12 @@ class ViewController: UIViewController {
                                       paymentData: PaymentData(type: paymentType,
                                                                keyConfig: keyConfig,
                                                                customerData: customerData,
-                                                               additionalData: additionalData))
+                                                               additionalData: additionalData),
+                                      uiConfig: PaymentContollerConfig(colorConfig: colorConfig,
+                                                                       localizationConfig: localizationConfig,
+                                                                       showApplePayForm: true,
+                                                                       showCreditCardForm: false)
+        )
     }
 }
 

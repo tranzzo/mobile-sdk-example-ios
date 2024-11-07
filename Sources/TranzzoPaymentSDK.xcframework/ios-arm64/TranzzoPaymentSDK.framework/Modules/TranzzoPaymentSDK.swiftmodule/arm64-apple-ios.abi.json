@@ -17407,9 +17407,179 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "showApplePayForm",
+            "printedName": "showApplePayForm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvp",
+            "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvp",
+            "moduleName": "TranzzoPaymentSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvg",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvg",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvs",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvs",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvM",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV16showApplePayFormSbvM",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showCreditCardForm",
+            "printedName": "showCreditCardForm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvp",
+            "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvp",
+            "moduleName": "TranzzoPaymentSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvg",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvg",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvs",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvs",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvM",
+                "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV18showCreditCardFormSbvM",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(colorConfig:localizationConfig:)",
+            "printedName": "init(colorConfig:localizationConfig:showApplePayForm:showCreditCardForm:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -17419,20 +17589,50 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ColorConfig",
-                "printedName": "TranzzoPaymentSDK.ColorConfig",
-                "usr": "s:17TranzzoPaymentSDK11ColorConfigV"
+                "name": "Optional",
+                "printedName": "TranzzoPaymentSDK.ColorConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ColorConfig",
+                    "printedName": "TranzzoPaymentSDK.ColorConfig",
+                    "usr": "s:17TranzzoPaymentSDK11ColorConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizationConfig",
-                "printedName": "TranzzoPaymentSDK.LocalizationConfig",
-                "usr": "s:17TranzzoPaymentSDK18LocalizationConfigV"
+                "name": "Optional",
+                "printedName": "TranzzoPaymentSDK.LocalizationConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizationConfig",
+                    "printedName": "TranzzoPaymentSDK.LocalizationConfig",
+                    "usr": "s:17TranzzoPaymentSDK18LocalizationConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV05colorE0012localizationE0AcA05ColorE0V_AA012LocalizationE0Vtcfc",
-            "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV05colorE0012localizationE0AcA05ColorE0V_AA012LocalizationE0Vtcfc",
+            "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV05colorE0012localizationE016showApplePayForm0h10CreditCardK0AcA05ColorE0VSg_AA012LocalizationE0VSgS2btcfc",
+            "mangledName": "$s17TranzzoPaymentSDK0B15ContollerConfigV05colorE0012localizationE016showApplePayForm0h10CreditCardK0AcA05ColorE0VSg_AA012LocalizationE0VSgS2btcfc",
             "moduleName": "TranzzoPaymentSDK",
             "declAttributes": [
               "AccessControl"
@@ -38400,7 +38600,7 @@
           {
             "kind": "Function",
             "name": "makePayment",
-            "printedName": "makePayment(rootController:delegate:paymentData:)",
+            "printedName": "makePayment(rootController:delegate:paymentData:uiConfig:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38424,11 +38624,26 @@
                 "name": "PaymentData",
                 "printedName": "TranzzoPaymentSDK.PaymentData",
                 "usr": "s:17TranzzoPaymentSDK0B4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TranzzoPaymentSDK.PaymentContollerConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentContollerConfig",
+                    "printedName": "TranzzoPaymentSDK.PaymentContollerConfig",
+                    "usr": "s:17TranzzoPaymentSDK0B15ContollerConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17TranzzoPaymentSDKAAC04makeB014rootController8delegate11paymentDataySo06UIViewF0C_AA0aB8Delegate_pAA0bI0VtFZ",
-            "mangledName": "$s17TranzzoPaymentSDKAAC04makeB014rootController8delegate11paymentDataySo06UIViewF0C_AA0aB8Delegate_pAA0bI0VtFZ",
+            "usr": "s:17TranzzoPaymentSDKAAC04makeB014rootController8delegate11paymentData8uiConfigySo06UIViewF0C_AA0aB8Delegate_pAA0bI0VAA0b9ContollerK0VSgtFZ",
+            "mangledName": "$s17TranzzoPaymentSDKAAC04makeB014rootController8delegate11paymentData8uiConfigySo06UIViewF0C_AA0aB8Delegate_pAA0bI0VAA0b9ContollerK0VSgtFZ",
             "moduleName": "TranzzoPaymentSDK",
             "static": true,
             "declAttributes": [
@@ -62947,434 +63162,434 @@
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 563,
+      "offset": 1006,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 573,
+      "offset": 1016,
       "length": 12,
       "value": "0.1176470588"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 593,
+      "offset": 1036,
       "length": 11,
       "value": "0.831372549"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 613,
+      "offset": 1056,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 687,
+      "offset": 1130,
       "length": 12,
       "value": "0.5803921569"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 708,
+      "offset": 1151,
       "length": 12,
       "value": "0.6274509804"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 728,
+      "offset": 1171,
       "length": 12,
       "value": "0.9333333333"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 749,
+      "offset": 1192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 816,
+      "offset": 1259,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 826,
+      "offset": 1269,
       "length": 12,
       "value": "0.1176470588"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 846,
+      "offset": 1289,
       "length": 11,
       "value": "0.831372549"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 866,
+      "offset": 1309,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 932,
+      "offset": 1375,
       "length": 12,
       "value": "0.9568627451"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 953,
+      "offset": 1396,
       "length": 12,
       "value": "0.9607843137"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 973,
+      "offset": 1416,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 983,
+      "offset": 1426,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1055,
+      "offset": 1498,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1065,
+      "offset": 1508,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1074,
+      "offset": 1517,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1084,
+      "offset": 1527,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1145,
+      "offset": 1588,
       "length": 12,
       "value": "0.8078431373"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1166,
+      "offset": 1609,
       "length": 11,
       "value": "0.831372549"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1185,
+      "offset": 1628,
       "length": 12,
       "value": "0.8823529412"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1206,
+      "offset": 1649,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1295,
+      "offset": 1738,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1305,
+      "offset": 1748,
       "length": 12,
       "value": "0.1176470588"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1325,
+      "offset": 1768,
       "length": 11,
       "value": "0.831372549"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1788,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1416,
+      "offset": 1859,
       "length": 12,
       "value": "0.3882352941"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1437,
+      "offset": 1880,
       "length": 12,
       "value": "0.4431372549"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1457,
+      "offset": 1900,
       "length": 12,
       "value": "0.5058823529"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1478,
+      "offset": 1921,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1538,
+      "offset": 1981,
       "length": 12,
       "value": "0.2705882353"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1559,
+      "offset": 2002,
       "length": 12,
       "value": "0.3058823529"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1579,
+      "offset": 2022,
       "length": 12,
       "value": "0.3568627451"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1600,
+      "offset": 2043,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1660,
+      "offset": 2103,
       "length": 12,
       "value": "0.1294117647"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1681,
+      "offset": 2124,
       "length": 12,
       "value": "0.1647058824"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1701,
+      "offset": 2144,
       "length": 12,
       "value": "0.2117647059"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1722,
+      "offset": 2165,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1783,
+      "offset": 2226,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1793,
+      "offset": 2236,
       "length": 12,
       "value": "0.6509803922"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1813,
+      "offset": 2256,
       "length": 12,
       "value": "0.6509803922"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1834,
+      "offset": 2277,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1936,
+      "offset": 2379,
       "length": 35,
       "value": "\"Оплата замовлення\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2016,
+      "offset": 2459,
       "length": 27,
       "value": "\"Розмір внеску\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2537,
       "length": 27,
       "value": "\"Введіть сумму\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2166,
+      "offset": 2609,
       "length": 29,
       "value": "\"Оплата карткою\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2681,
       "length": 18,
       "value": "\"Оплатити\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2749,
       "length": 27,
       "value": "\"Додати картку\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2381,
+      "offset": 2824,
       "length": 34,
       "value": "\"Картка з помилкою\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2465,
+      "offset": 2908,
       "length": 44,
       "value": "\"Введіть чи відскануйте\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2562,
+      "offset": 3005,
       "length": 6,
       "value": "\"ММ\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 3063,
       "length": 6,
       "value": "\"ГГ\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2673,
+      "offset": 3116,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2725,
+      "offset": 3168,
       "length": 29,
       "value": "\"Відміна оплати\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2807,
+      "offset": 3250,
       "length": 52,
       "value": "\"Ви хочете скасувати оплату?\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2908,
+      "offset": 3351,
       "length": 20,
       "value": "\"Скасувати\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2976,
+      "offset": 3419,
       "length": 22,
       "value": "\"Продовжити\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3047,
+      "offset": 3490,
       "length": 33,
       "value": "\"Збережені картки\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 3566,
       "length": 23,
       "value": "\"Інша картка\""
     },
     {
       "filePath": "\/Users\/vitaliystepanov\/Projects\/ftr_projects\/mpsdk-ios-new\/TranzzoPaymentsSDK\/Classes\/Utils\/Models\/Public\/PaymentContollerConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3197,
+      "offset": 3640,
       "length": 46,
       "value": "\"Обрати збережену картку\""
     },

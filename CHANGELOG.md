@@ -153,6 +153,7 @@ All notable changes to this project will be documented in this file.
   
 
 ## [1.5.19] - 25.09.2024
+
 #### Fixed
   Fixed compilation errors
 
@@ -162,3 +163,14 @@ All notable changes to this project will be documented in this file.
 #### Changed
   Added uiConfig to makePayment method
   Removed uiConfig from setConfig method
+
+
+## [1.6.21] - 04.02.2025
+
+#### Fixed 
+  Fonts color for section title
+  Section title visibility
+#### Added
+  Added additional property to ApplePayConfig object:
+    merchantName: String
+    

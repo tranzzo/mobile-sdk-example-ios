@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "UAH", applePay: ApplePayConfig(merchantId: "merchant.com.tranzzo.msdk", countryCode: "UA"), enableLogging: true))
+        TranzzoPaymentSDK.setConfig(paymentConfig: PaymentsConfig(environment: .sandbox, currency: "UAH", applePay: ApplePayConfig(merchantId: "merchant.com.tranzzo.msdk", merchantName: "ТОВ Рай", countryCode: "UA"), enableLogging: true))
         
         return true
     }

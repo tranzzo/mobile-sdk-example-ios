@@ -6997,9 +6997,264 @@
         "printedName": "ApplePayConfig",
         "children": [
           {
+            "kind": "Var",
+            "name": "merchantId",
+            "printedName": "merchantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvp",
+            "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvp",
+            "moduleName": "TranzzoPaymentSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvg",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvg",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvs",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvs",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvM",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantIdSSvM",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantName",
+            "printedName": "merchantName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvp",
+            "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvp",
+            "moduleName": "TranzzoPaymentSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvg",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvg",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvs",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvs",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvM",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV12merchantNameSSvM",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvp",
+            "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvp",
+            "moduleName": "TranzzoPaymentSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvg",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvg",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvs",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvs",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvM",
+                "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV11countryCodeSSvM",
+                "moduleName": "TranzzoPaymentSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(merchantId:countryCode:)",
+            "printedName": "init(merchantId:merchantName:countryCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7018,11 +7273,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantId11countryCodeACSS_SStcfc",
-            "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantId11countryCodeACSS_SStcfc",
+            "usr": "s:17TranzzoPaymentSDK14ApplePayConfigV10merchantId0G4Name11countryCodeACSS_S2Stcfc",
+            "mangledName": "$s17TranzzoPaymentSDK14ApplePayConfigV10merchantId0G4Name11countryCodeACSS_S2Stcfc",
             "moduleName": "TranzzoPaymentSDK",
             "declAttributes": [
               "AccessControl"
